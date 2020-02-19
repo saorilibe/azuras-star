@@ -36,3 +36,8 @@ These ports are defined in each node’s node.conf file under java-source/build/
 Each node webserver exposes the following endpoints:
 
  * /api/example/me
+ * /api/example/peers
+ * /api/example/ious
+ * /api/example/create-iou
+
+There is also a web front-end served from /web/example.
