@@ -1,3 +1,4 @@
 buildscript {
     ext {
-        corda_release_gro
+        corda_release_group = 'net.corda'
+        corda_release_version = '3
