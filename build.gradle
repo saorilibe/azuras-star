@@ -19,4 +19,5 @@ buildscript {
 
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath "net.co
+        classpath "net.corda.plugins:cordapp:$corda_gradle_plugins_version"
+        classpath 
