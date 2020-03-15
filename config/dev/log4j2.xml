@@ -38,3 +38,23 @@
                     <IfLastModified age="60d">
                         <IfAny>
                             <IfAccumulatedFileSize exceeds="10 GB"/>
+                        </IfAny>
+                    </IfLastModified>
+                </Delete>
+            </DefaultRolloverStrategy>
+
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console-Appender"/>
+            <AppenderRef ref="RollingFile-Appender"/>
+        </Root>
+        <Logger name="net.corda" level="info" additivity="false">
+            <AppenderRef ref="Console-Appender"/>
+            <AppenderRef ref="RollingFile-Appender"/>
+        </Logger>
+    </Loggers>
+
+</Configuration>
