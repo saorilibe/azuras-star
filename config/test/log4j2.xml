@@ -6,4 +6,7 @@
                 <pattern>
                     [%-5level] %d{HH:mm:ss.SSS} [%t] %c{1}.%M - %msg%n
                 </pattern>>
-     
+            </PatternLayout>
+        </Console>
+    </Appenders>
+    <Log
