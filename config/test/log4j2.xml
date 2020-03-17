@@ -3,4 +3,5 @@
     <Appenders>
         <Console name="Console-Appender" target="SYSTEM_OUT">
             <PatternLayout>
-      
+                <pattern>
+                    [%-5level] %d{HH:mm:ss.SSS
