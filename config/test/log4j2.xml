@@ -9,4 +9,6 @@
             </PatternLayout>
         </Console>
     </Appenders>
-    <Log
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Cons
