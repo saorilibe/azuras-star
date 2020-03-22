@@ -11,4 +11,6 @@
     </Appenders>
     <Loggers>
         <Root level="info">
-            <AppenderRef ref="Cons
+            <AppenderRef ref="Console-Appender"/>
+        </Root>
+        <Logger na
