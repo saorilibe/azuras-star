@@ -15,4 +15,6 @@
         </Root>
         <Logger name="net.corda" level="info" additivity="false">
             <AppenderRef ref="Console-Appender"/>
-        </Log
+        </Logger>
+    </Loggers>
+</Configuration>
