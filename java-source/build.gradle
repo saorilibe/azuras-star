@@ -6,4 +6,5 @@ repositories {
     maven { url 'https://jitpack.io' }
 }
 
-appl
+apply plugin: 'java'
+apply plugin: 'net.corda.plugins.co
