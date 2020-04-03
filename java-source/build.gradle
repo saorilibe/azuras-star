@@ -7,4 +7,5 @@ repositories {
 }
 
 apply plugin: 'java'
-apply plugin: 'net.corda.plugins.co
+apply plugin: 'net.corda.plugins.cordapp'
+apply plugin: 'net.corda.plugins.cordformati
