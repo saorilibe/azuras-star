@@ -14,4 +14,6 @@ apply plugin: 'net.corda.plugins.quasar-utils'
 jar.baseName = "cordapp-example"
 
 sourceSets {
-    main 
+    main {
+        resources {
+            srcDir "../config
