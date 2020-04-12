@@ -16,4 +16,8 @@ jar.baseName = "cordapp-example"
 sourceSets {
     main {
         resources {
-            srcDir "../config
+            srcDir "../config/dev"
+        }
+    }
+    test {
+        resource
