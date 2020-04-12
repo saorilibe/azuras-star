@@ -22,4 +22,8 @@ sourceSets {
     test {
         resources {
             srcDir "../config/test"
-       
+        }
+    }
+    integrationTest {
+        java {
+ 
