@@ -20,4 +20,6 @@ sourceSets {
         }
     }
     test {
-        resource
+        resources {
+            srcDir "../config/test"
+       
