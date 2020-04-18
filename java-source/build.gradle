@@ -26,4 +26,6 @@ sourceSets {
     }
     integrationTest {
         java {
-            compileClasspath += main.output + test.out
+            compileClasspath += main.output + test.output
+            runtimeClasspath += main.output + test.output
+          
