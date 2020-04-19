@@ -34,4 +34,5 @@ sourceSets {
 }
 
 configurations {
-    integrationTestCompile.
+    integrationTestCompile.extendsFrom testCompile
+    integrationTestRunti
