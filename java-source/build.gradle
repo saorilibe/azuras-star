@@ -41,4 +41,5 @@ configurations {
 dependencies {
     testCompile "junit:junit:$junit_version"
 
-    // Corda integration dependencie
+    // Corda integration dependencies
+    cordaCompile "$corda_release_group:co
