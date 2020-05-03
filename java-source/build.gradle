@@ -43,4 +43,4 @@ dependencies {
 
     // Corda integration dependencies
     cordaCompile "$corda_release_group:corda-core:$corda_release_version"
-    cordaCompile "$
+    cordaCompile "$corda_release_group:corda-finance:$corda_release_
