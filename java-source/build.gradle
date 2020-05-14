@@ -53,4 +53,4 @@ dependencies {
     testCompile "$corda_release_group:corda-node-driver:$corda_release_version"
 
     // CorDapp dependencies
-    // Specify yo
+    // Specify your cordapp's dependencies below, including depen
