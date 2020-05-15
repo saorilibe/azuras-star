@@ -57,4 +57,5 @@ dependencies {
     cordapp "$corda_release_group:corda-finance:$corda_release_version"
 }
 
-task integ
+task integrationTest(type: Test, dependsOn: []) {
+    testClas
