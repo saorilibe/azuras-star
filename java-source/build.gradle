@@ -54,4 +54,7 @@ dependencies {
 
     // CorDapp dependencies
     // Specify your cordapp's dependencies below, including dependent CorDapps
-    cordapp "$corda_release_group:corda-f
+    cordapp "$corda_release_group:corda-finance:$corda_release_version"
+}
+
+task integ
