@@ -59,4 +59,4 @@ dependencies {
 
 task integrationTest(type: Test, dependsOn: []) {
     testClassesDirs = sourceSets.integrationTest.output.classesDirs
-    clas
+    classpath = sourceSets.integrationTest.runtimeCla
