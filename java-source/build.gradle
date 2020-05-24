@@ -63,4 +63,4 @@ task integrationTest(type: Test, dependsOn: []) {
 }
 
 tasks.withType(JavaCompile) {
-    options.comp
+    options.compilerArgs << "-parameters" // Required for shell comman
