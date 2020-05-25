@@ -63,4 +63,7 @@ task integrationTest(type: Test, dependsOn: []) {
 }
 
 tasks.withType(JavaCompile) {
-    options.compilerArgs << "-parameters" // Required for shell comman
+    options.compilerArgs << "-parameters" // Required for shell commands.
+}
+
+task deployNodes(type: net.corda.plugins.Cordform, depen
