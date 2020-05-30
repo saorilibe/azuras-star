@@ -68,3 +68,6 @@ tasks.withType(JavaCompile) {
 
 task deployNodes(type: net.corda.plugins.Cordform, dependsOn: ['jar']) {
     directory "./build/nodes"
+    node {
+        name "O=Notary,L=London,C=GB"
+   
