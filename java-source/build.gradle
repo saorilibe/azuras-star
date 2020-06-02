@@ -72,4 +72,7 @@ task deployNodes(type: net.corda.plugins.Cordform, dependsOn: ['jar']) {
         name "O=Notary,L=London,C=GB"
         notary = [validating : false]
         p2pPort 10006
-        cordapps = ["$corda_release_group:corda-finance:
+        cordapps = ["$corda_release_group:corda-finance:$corda_release_version"]
+    }
+    node {
+        name "O=PartyA,L=
