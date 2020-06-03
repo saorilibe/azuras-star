@@ -79,4 +79,6 @@ task deployNodes(type: net.corda.plugins.Cordform, dependsOn: ['jar']) {
         p2pPort 10007
         rpcSettings {
             address("localhost:10008")
-        
+            adminAddress("localhost:10048")
+        }
+        web
