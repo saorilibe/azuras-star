@@ -98,4 +98,6 @@ task deployNodes(type: net.corda.plugins.Cordform, dependsOn: ['jar']) {
     }
     node {
         name "O=PartyC,L=Paris,C=FR"
-        p2pPort 10
+        p2pPort 10013
+        rpcSettings {
+            address("lo
