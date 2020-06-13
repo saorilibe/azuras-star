@@ -102,3 +102,6 @@ task deployNodes(type: net.corda.plugins.Cordform, dependsOn: ['jar']) {
         rpcSettings {
             address("localhost:10014")
             adminAddress("localhost:10054")
+        }
+        webPort 10015
+   
