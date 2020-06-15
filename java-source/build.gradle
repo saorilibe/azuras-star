@@ -104,4 +104,5 @@ task deployNodes(type: net.corda.plugins.Cordform, dependsOn: ['jar']) {
             adminAddress("localhost:10054")
         }
         webPort 10015
-        cordapps = ["$corda_release_group:corda-finance:$cor
+        cordapps = ["$corda_release_group:corda-finance:$corda_release_version"]
+        rpcUsers = [[user: "user1
