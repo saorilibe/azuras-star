@@ -109,4 +109,6 @@ task deployNodes(type: net.corda.plugins.Cordform, dependsOn: ['jar']) {
     }
 }
 
-task runExampleClientRPCJava(type: JavaExe
+task runExampleClientRPCJava(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+  
