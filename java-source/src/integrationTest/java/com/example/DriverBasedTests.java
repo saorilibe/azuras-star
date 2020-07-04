@@ -17,4 +17,7 @@ import org.junit.Test;
 import java.util.List;
 
 import static net.corda.testing.driver.Driver.driver;
-import static org.junit.Assert.ass
+import static org.junit.Assert.assertEquals;
+
+public class DriverBasedTests {
+    private fin
