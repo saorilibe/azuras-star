@@ -16,4 +16,5 @@ import org.junit.Test;
 
 import java.util.List;
 
-import static net.corda.t
+import static net.corda.testing.driver.Driver.driver;
+import static org.junit.Assert.ass
