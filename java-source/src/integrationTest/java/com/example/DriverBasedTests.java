@@ -20,4 +20,4 @@ import static net.corda.testing.driver.Driver.driver;
 import static org.junit.Assert.assertEquals;
 
 public class DriverBasedTests {
-    private fin
+    private final TestIdentity bankA = new TestIdentity(new CordaX500Na
