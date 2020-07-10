@@ -25,3 +25,4 @@ public class DriverBasedTests {
 
     @Test
     public void nodeTest() {
+        driver(new DriverParameters().withIsDebug(t
