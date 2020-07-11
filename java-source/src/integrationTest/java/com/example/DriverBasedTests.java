@@ -27,4 +27,4 @@ public class DriverBasedTests {
     public void nodeTest() {
         driver(new DriverParameters().withIsDebug(true).withStartNodesInProcess(true), dsl -> {
 
-         
+            // This starts three nodes simultaneously with start
