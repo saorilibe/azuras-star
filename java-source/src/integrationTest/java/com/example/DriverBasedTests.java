@@ -30,4 +30,5 @@ public class DriverBasedTests {
             // This starts three nodes simultaneously with startNode, which returns a future that completes when the node
             // has completed startup. Then these are all resolved with getOrThrow which returns the NodeHandle list.
             List<CordaFuture<NodeHandle>> handleFutures = ImmutableList.of(
-                    dsl.startNode(new NodeParameters().withProvidedName(bank
+                    dsl.startNode(new NodeParameters().withProvidedName(bankA.getName())),
+                    dsl.startNode(new NodePa
