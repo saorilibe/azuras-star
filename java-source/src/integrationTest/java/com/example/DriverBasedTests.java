@@ -35,4 +35,5 @@ public class DriverBasedTests {
             );
 
             try {
-                NodeHandl
+                NodeHandle partyAHandle = handleFutures.get(0).get();
+     
