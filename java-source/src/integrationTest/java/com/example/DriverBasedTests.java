@@ -38,4 +38,5 @@ public class DriverBasedTests {
                 NodeHandle partyAHandle = handleFutures.get(0).get();
                 NodeHandle partyBHandle = handleFutures.get(1).get();
 
-                // This test will call via the RPC proxy to find a party of anothe
+                // This test will call via the RPC proxy to find a party of another node to verify that the nodes have
+            
