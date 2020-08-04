@@ -43,4 +43,6 @@ public class DriverBasedTests {
                 // and verifying the states in the vault and other important metrics to ensure that your CorDapp is working
                 // as intended.
                 assertEquals(partyAHandle.getRpc().wellKnownPartyFromX500Name(bankB.getName()).getName(), bankB.getName());
-                assertEquals(partyBHandle.getRpc().wellKnownPartyFromX500Name(bankA.getName()).getName(), b
+                assertEquals(partyBHandle.getRpc().wellKnownPartyFromX500Name(bankA.getName()).getName(), bankA.getName());
+            } catch (Exception e) {
+         
