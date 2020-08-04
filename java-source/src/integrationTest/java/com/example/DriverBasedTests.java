@@ -54,4 +54,4 @@ public class DriverBasedTests {
 
     @Test
     public void nodeWebserverTest() {
-        driver(new Driver
+        driver(new DriverParameters().withIsDebug(true).withStartNodesInProcess(true),
