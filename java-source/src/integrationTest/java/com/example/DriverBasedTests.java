@@ -45,4 +45,7 @@ public class DriverBasedTests {
                 assertEquals(partyAHandle.getRpc().wellKnownPartyFromX500Name(bankB.getName()).getName(), bankB.getName());
                 assertEquals(partyBHandle.getRpc().wellKnownPartyFromX500Name(bankA.getName()).getName(), bankA.getName());
             } catch (Exception e) {
-                throw new RuntimeException("Caught exception
+                throw new RuntimeException("Caught exception during test", e);
+            }
+
+            retur
