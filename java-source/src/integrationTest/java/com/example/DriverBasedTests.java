@@ -54,4 +54,6 @@ public class DriverBasedTests {
 
     @Test
     public void nodeWebserverTest() {
-        driver(new DriverParameters().withIsDebug(true).withStartNodesInProcess(true),
+        driver(new DriverParameters().withIsDebug(true).withStartNodesInProcess(true), dsl -> {
+
+            List<CordaFuture<NodeHandle>
