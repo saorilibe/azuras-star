@@ -56,4 +56,5 @@ public class DriverBasedTests {
     public void nodeWebserverTest() {
         driver(new DriverParameters().withIsDebug(true).withStartNodesInProcess(true), dsl -> {
 
-            List<CordaFuture<NodeHandle>
+            List<CordaFuture<NodeHandle>> handleFutures = ImmutableList.of(
+       
