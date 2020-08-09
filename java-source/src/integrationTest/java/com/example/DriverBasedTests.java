@@ -57,4 +57,4 @@ public class DriverBasedTests {
         driver(new DriverParameters().withIsDebug(true).withStartNodesInProcess(true), dsl -> {
 
             List<CordaFuture<NodeHandle>> handleFutures = ImmutableList.of(
-       
+                    dsl.startNode(new NodeParameters().withProvidedNam
