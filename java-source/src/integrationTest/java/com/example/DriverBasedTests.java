@@ -58,4 +58,4 @@ public class DriverBasedTests {
 
             List<CordaFuture<NodeHandle>> handleFutures = ImmutableList.of(
                     dsl.startNode(new NodeParameters().withProvidedName(bankA.getName())),
-                    ds
+                    dsl.startNode(new NodeParameters().withProvidedN
