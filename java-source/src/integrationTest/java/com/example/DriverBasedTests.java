@@ -62,4 +62,4 @@ public class DriverBasedTests {
             );
 
             try {
-                // This test starts each no
+                // This test starts each node's webserver and makes an HTTP call to retrieve
