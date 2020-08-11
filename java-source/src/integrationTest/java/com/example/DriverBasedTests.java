@@ -62,4 +62,5 @@ public class DriverBasedTests {
             );
 
             try {
-                // This test starts each node's webserver and makes an HTTP call to retrieve
+                // This test starts each node's webserver and makes an HTTP call to retrieve the body of a GET endpoint on
+                // the node
