@@ -69,4 +69,5 @@ public class DriverBasedTests {
 
                     WebserverHandle webserverHandle = dsl.startWebserver(nodeHandle).get();
 
-                    NetworkHostAndPort nodeAddress = webserverHandle.getListenAddress()
+                    NetworkHostAndPort nodeAddress = webserverHandle.getListenAddress();
+                    String url = String.f
