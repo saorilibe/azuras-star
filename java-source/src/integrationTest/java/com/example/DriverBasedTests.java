@@ -70,4 +70,6 @@ public class DriverBasedTests {
                     WebserverHandle webserverHandle = dsl.startWebserver(nodeHandle).get();
 
                     NetworkHostAndPort nodeAddress = webserverHandle.getListenAddress();
-                    String url = String.f
+                    String url = String.format("http://%s/api/example/ious", nodeAddress);
+
+       
