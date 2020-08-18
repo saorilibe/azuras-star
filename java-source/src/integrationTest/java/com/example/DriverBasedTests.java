@@ -72,4 +72,5 @@ public class DriverBasedTests {
                     NetworkHostAndPort nodeAddress = webserverHandle.getListenAddress();
                     String url = String.format("http://%s/api/example/ious", nodeAddress);
 
-                    Request request = new Request.Builder().u
+                    Request request = new Request.Builder().url(url).build();
+                    OkHttpCli
