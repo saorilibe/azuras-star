@@ -73,4 +73,5 @@ public class DriverBasedTests {
                     String url = String.format("http://%s/api/example/ious", nodeAddress);
 
                     Request request = new Request.Builder().url(url).build();
-                    OkHttpCli
+                    OkHttpClient client = new OkHttpClient();
+                    
