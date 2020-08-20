@@ -105,3 +105,50 @@ public class Api {
         }
         if (iouAge <= 0) {
             return Response.status(BAD_REQUEST).entity("Query parameter 'iouAge' is negative.\n").build();
+        }
+        if (iouGender == null) {
+            return Response.status(BAD_REQUEST).entity("Query parameter 'iouGender' missing or has wrong format.\n").build();
+        }
+        if (iouHeight <= 0) {
+            return Response.status(BAD_REQUEST).entity("Query parameter 'iouHeight' is negative.\n").build();
+        }
+        if (iouWeight <= 0) {
+            return Response.status(BAD_REQUEST).entity("Query parameter 'iouWeight' is negative.\n").build();
+        }
+        if (iouBloodGroup == null) {
+            return Response.status(BAD_REQUEST).entity("Query parameter 'iouBloodGroup' missing or has wrong format.\n").build();
+        }
+        if (iouDiagnosis == null) {
+            return Response.status(BAD_REQUEST).entity("Query parameter 'iouDiagnosis' missing or has wrong format.\n").build();
+        }
+        if (iouMedicine == null) {
+            return Response.status(BAD_REQUEST).entity("Query parameter 'iouMedicine' missing or has wrong format.\n").build();
+        }
+        if (partyName == null) {
+            return Response.status(BAD_REQUEST).entity("Query parameter 'partyName' missing or has wrong format.\n").build();
+        }
+
+        final Party otherParty = rpcOps.wellKnownPartyFromX500Name(partyName);
+        if (otherParty == null) {
+            return Response.status(BAD_REQUEST).entity("Party named " + partyName + "cannot be found.\n").build();
+        }
+
+        try {
+            final SignedTransaction signedTx = rpcOps
+                    .startTrackedFlowDynamic(IssueFlow.Initiator.class, iouName, iouAge, iouGender, iouHeight, iouWeight, iouBloodGroup, iouDiagnosis, iouMedicine, otherParty)
+                    .getReturnValue()
+                    .get();
+
+            final String msg = String.format("Transaction id %s committed to ledger.\n", signedTx.getId());
+            return Response.status(CREATED).entity(msg).build();
+
+        } catch (Throwable ex) {
+            final String msg = ex.getMessage();
+            logger.error(ex.getMessage(), ex);
+            return Response.status(BAD_REQUEST).entity(msg).build();
+        }
+    }
+	
+	/**
+     * Displays all IOU states that are created by Party.
+     */
