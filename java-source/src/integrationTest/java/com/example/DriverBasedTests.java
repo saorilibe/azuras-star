@@ -78,4 +78,5 @@ public class DriverBasedTests {
 
                     assertEquals("[ ]", response.body().string());
                 }
-      
+            } catch (Exception e) {
+                throw new Runt
