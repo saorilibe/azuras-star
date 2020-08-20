@@ -79,4 +79,4 @@ public class DriverBasedTests {
                     assertEquals("[ ]", response.body().string());
                 }
             } catch (Exception e) {
-                throw new Runt
+                throw new RuntimeException("Caught exception during tes
