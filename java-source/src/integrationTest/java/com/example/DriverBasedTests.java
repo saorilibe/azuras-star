@@ -76,4 +76,6 @@ public class DriverBasedTests {
                     OkHttpClient client = new OkHttpClient();
                     Response response = client.newCall(request).execute();
 
-                    assertEquals("[ ]",
+                    assertEquals("[ ]", response.body().string());
+                }
+      
