@@ -54,3 +54,16 @@ public class IssueContract implements Contract {
             require.using("The IOU's diagnosis must not be null.",
                     out.getDiagnosis() != null);
             require.using("The IOU's medicine must not be null.",
+                    out.getMedicine() != null);
+
+            return null;
+        });
+    }
+
+    /**
+     * This contract only implements one command, Create.
+     */
+    public interface Commands extends CommandData {
+        class Create implements Commands {}
+    }
+}
