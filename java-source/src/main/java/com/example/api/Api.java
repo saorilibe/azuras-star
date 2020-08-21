@@ -152,3 +152,16 @@ public class Api {
 	/**
      * Displays all IOU states that are created by Party.
      */
+    @GET
+    @Path("my-ious")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getMyIOUs() throws NoSuchFieldException {
+        QueryCriteria generalCriteria = new QueryCriteria.VaultQueryCriteria(Vault.StateStatus.ALL);
+        Field hospital = IOUSchemaV1.PersistentIOU.class.getDeclaredField("hospital");
+        CriteriaExpression hospitalIndex = Builder.equal(hospital, myLegalName.toString());
+        QueryCriteria hospitalCriteria = new QueryCriteria.VaultCustomQueryCriteria(hospitalIndex);
+        QueryCriteria criteria = generalCriteria.and(hospitalCriteria);
+        List<StateAndRef<IOUState>> results = rpcOps.vaultQueryByCriteria(criteria,IOUState.class).getStates();
+        return Response.status(OK).entity(results).build();
+    }
+}
