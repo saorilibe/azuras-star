@@ -40,3 +40,11 @@ public class ExampleClientRPC {
 
         // Grab all existing and future IOU states in the vault.
         final DataFeed<Vault.Page<IOUState>, Vault.Update<IOUState>> dataFeed = proxy.vaultTrack(IOUState.class);
+        final Vault.Page<IOUState> snapshot = dataFeed.getSnapshot();
+        final Observable<Vault.Update<IOUState>> updates = dataFeed.getUpdates();
+
+        // Log the 'placed' IOUs and listen for new ones.
+        snapshot.getStates().forEach(ExampleClientRPC::logState);
+        updates.toBlocking().subscribe(update -> update.getProduced().forEach(ExampleClientRPC::logState));
+    }
+}
