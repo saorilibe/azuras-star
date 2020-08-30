@@ -15,4 +15,4 @@ import net.corda.core.transactions.TransactionBuilder;
 import net.corda.core.utilities.ProgressTracker;
 import net.corda.core.utilities.ProgressTracker.Step;
 
-import s
+import static com.example.contract.IssueContract.IOU_CONTRACT_ID;
