@@ -6,4 +6,6 @@ import com.example.state.IOUState;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
 import net.corda.core.contracts.Command;
-import net.corda.core.contracts.Contrac
+import net.corda.core.contracts.ContractState;
+import net.corda.core.contracts.UniqueIdentifier;
+i
