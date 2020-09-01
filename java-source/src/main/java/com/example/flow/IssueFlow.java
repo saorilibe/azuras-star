@@ -24,4 +24,7 @@ import static net.corda.core.contracts.ContractsDSL.requireThat;
 public class IssueFlow {
     @InitiatingFlow
     @StartableByRPC
-    public static class Initiator extends FlowLogic<SignedTran
+    public static class Initiator extends FlowLogic<SignedTransaction> {
+
+        private final String iouName;
+        pr
