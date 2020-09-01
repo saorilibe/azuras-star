@@ -28,4 +28,6 @@ public class IssueFlow {
 
         private final String iouName;
         private final int iouAge;
-        private final String iou
+        private final String iouGender;
+        private final int iouHeight;
+        private fin
