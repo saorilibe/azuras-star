@@ -24,4 +24,4 @@ import static net.corda.core.contracts.ContractsDSL.requireThat;
 public class IssueFlow {
     @InitiatingFlow
     @StartableByRPC
-    public sta
+    public static class Initiator extends FlowLogic<SignedTran
