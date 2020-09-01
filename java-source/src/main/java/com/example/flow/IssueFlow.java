@@ -21,4 +21,7 @@ import static net.corda.core.contracts.ContractsDSL.requireThat;
 /**
  * All methods called within the [FlowLogic] sub-class need to be annotated with the @Suspendable annotation.
  */
-public class IssueFlow 
+public class IssueFlow {
+    @InitiatingFlow
+    @StartableByRPC
+    public sta
