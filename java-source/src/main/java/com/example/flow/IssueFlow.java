@@ -19,4 +19,6 @@ import static com.example.contract.IssueContract.IOU_CONTRACT_ID;
 import static net.corda.core.contracts.ContractsDSL.requireThat;
 
 /**
- * All methods called within the [FlowLogic] sub-class need to be annotated with th
+ * All methods called within the [FlowLogic] sub-class need to be annotated with the @Suspendable annotation.
+ */
+public class IssueFlow 
