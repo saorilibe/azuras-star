@@ -27,4 +27,5 @@ public class IssueFlow {
     public static class Initiator extends FlowLogic<SignedTransaction> {
 
         private final String iouName;
-        pr
+        private final int iouAge;
+        private final String iou
