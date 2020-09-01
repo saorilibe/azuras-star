@@ -30,4 +30,5 @@ public class IssueFlow {
         private final int iouAge;
         private final String iouGender;
         private final int iouHeight;
-        private fin
+        private final int iouWeight;
+        private final String iouBloo
