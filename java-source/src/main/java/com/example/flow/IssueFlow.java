@@ -33,4 +33,4 @@ public class IssueFlow {
         private final int iouWeight;
         private final String iouBloodGroup;
         private final String iouDiagnosis;
-  
+        private final String iouMed
