@@ -37,4 +37,4 @@ public class IssueFlow {
         private final Party otherParty;
 
         private final Step GENERATING_TRANSACTION = new Step("Generating transaction based on new IOU.");
-        private final Step
+        private final Step VERIFYING_TRANSACTION = new Step("Verifying contr
