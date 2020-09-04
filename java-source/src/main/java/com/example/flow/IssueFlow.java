@@ -36,4 +36,5 @@ public class IssueFlow {
         private final String iouMedicine;
         private final Party otherParty;
 
-        private final Step GENERATING_TRANSACTION = new Step("Generating tr
+        private final Step GENERATING_TRANSACTION = new Step("Generating transaction based on new IOU.");
+        private final Step
