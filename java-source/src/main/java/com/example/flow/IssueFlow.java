@@ -38,4 +38,4 @@ public class IssueFlow {
 
         private final Step GENERATING_TRANSACTION = new Step("Generating transaction based on new IOU.");
         private final Step VERIFYING_TRANSACTION = new Step("Verifying contract constraints.");
-        private final
+        private final Step SIGNING_TRANSACTION = new Step("Signing transaction with
