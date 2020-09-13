@@ -49,3 +49,4 @@ public class IssueFlow {
         private final Step FINALISING_TRANSACTION = new Step("Obtaining notary signature and recording transaction.") {
             @Override
             public ProgressTracker childProgressTracker() {
+                return FinalityFlow.Companion.track
