@@ -39,4 +39,7 @@ public class IssueFlow {
         private final Step GENERATING_TRANSACTION = new Step("Generating transaction based on new IOU.");
         private final Step VERIFYING_TRANSACTION = new Step("Verifying contract constraints.");
         private final Step SIGNING_TRANSACTION = new Step("Signing transaction with our private key.");
-        private final Step GATHERING_SIGS = new Step("Gathering the counter
+        private final Step GATHERING_SIGS = new Step("Gathering the counterparty's signature.") {
+
+            @Override
+     
