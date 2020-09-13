@@ -42,4 +42,5 @@ public class IssueFlow {
         private final Step GATHERING_SIGS = new Step("Gathering the counterparty's signature.") {
 
             @Override
-     
+            public ProgressTracker childProgressTracker() {
+       
