@@ -46,4 +46,4 @@ public class IssueFlow {
                 return CollectSignaturesFlow.Companion.tracker();
             }
         };
-        private final Step 
+        private final Step FINALISING_TRANSACTION = new Step("Obtaining notary si
