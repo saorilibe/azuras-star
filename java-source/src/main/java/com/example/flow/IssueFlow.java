@@ -43,4 +43,7 @@ public class IssueFlow {
 
             @Override
             public ProgressTracker childProgressTracker() {
-                return CollectSignaturesFlow.Companion.t
+                return CollectSignaturesFlow.Companion.tracker();
+            }
+        };
+        private final Step 
