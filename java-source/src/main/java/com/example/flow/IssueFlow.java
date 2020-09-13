@@ -47,4 +47,5 @@ public class IssueFlow {
             }
         };
         private final Step FINALISING_TRANSACTION = new Step("Obtaining notary signature and recording transaction.") {
-            @Over
+            @Override
+            public ProgressTracker childProgressTracker() {
