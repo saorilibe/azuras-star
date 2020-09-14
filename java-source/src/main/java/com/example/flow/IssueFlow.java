@@ -53,4 +53,4 @@ public class IssueFlow {
             }
         };
 
-        // The progress trac
+        // The progress tracker checkpoints each stage of the flow and outputs the specifi
