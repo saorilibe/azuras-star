@@ -57,4 +57,6 @@ public class IssueFlow {
         // checkpoint is reached in the code. See the 'progressTracker.currentStep' expressions within the call()
         // function.
         private final ProgressTracker progressTracker = new ProgressTracker(
-                GENERATING_TRANSACTION
+                GENERATING_TRANSACTION,
+                VERIFYING_TRANSACTION,
+                S
