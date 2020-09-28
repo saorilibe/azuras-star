@@ -59,4 +59,6 @@ public class IssueFlow {
         private final ProgressTracker progressTracker = new ProgressTracker(
                 GENERATING_TRANSACTION,
                 VERIFYING_TRANSACTION,
-                S
+                SIGNING_TRANSACTION,
+                GATHERING_SIGS,
+                FINALISING
