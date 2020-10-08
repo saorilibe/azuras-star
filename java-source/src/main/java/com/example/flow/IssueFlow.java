@@ -61,4 +61,7 @@ public class IssueFlow {
                 VERIFYING_TRANSACTION,
                 SIGNING_TRANSACTION,
                 GATHERING_SIGS,
-                FINALISING
+                FINALISING_TRANSACTION
+        );
+
+        public In
