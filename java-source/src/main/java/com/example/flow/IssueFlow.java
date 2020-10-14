@@ -67,4 +67,5 @@ public class IssueFlow {
         public Initiator(String iouName, int iouAge, String iouGender, int iouHeight, int iouWeight, String iouBloodGroup, String iouDiagnosis, String iouMedicine, Party otherParty) {
             this.iouName = iouName;
             this.iouAge = iouAge;
-       
+            this.iouGender = iouGender;
+            this.
