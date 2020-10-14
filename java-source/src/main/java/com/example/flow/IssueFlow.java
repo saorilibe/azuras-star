@@ -70,4 +70,6 @@ public class IssueFlow {
             this.iouGender = iouGender;
             this.iouHeight = iouHeight;
             this.iouWeight = iouWeight;
-            this.iouBloodGroup = iouBloodGro
+            this.iouBloodGroup = iouBloodGroup;
+            this.iouDiagnosis = iouDiagnosis;
+ 
