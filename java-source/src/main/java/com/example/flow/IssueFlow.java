@@ -68,4 +68,5 @@ public class IssueFlow {
             this.iouName = iouName;
             this.iouAge = iouAge;
             this.iouGender = iouGender;
-            this.
+            this.iouHeight = iouHeight;
+            this.iouWeight =
