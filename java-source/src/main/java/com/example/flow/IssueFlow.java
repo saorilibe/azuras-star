@@ -69,4 +69,5 @@ public class IssueFlow {
             this.iouAge = iouAge;
             this.iouGender = iouGender;
             this.iouHeight = iouHeight;
-            this.iouWeight =
+            this.iouWeight = iouWeight;
+            this.iouBloodGroup = iouBloodGro
