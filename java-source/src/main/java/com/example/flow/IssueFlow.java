@@ -64,4 +64,4 @@ public class IssueFlow {
                 FINALISING_TRANSACTION
         );
 
-        public Initiator(String iouName, int iouAge, String iouGender, int iouHeight, int iouWeight, String io
+        public Initiator(String iouName, int iouAge, String iouGender, int iouHeight, int iouWeight, String iouBloodGroup, String iouDiagnosis, String iouMedicine,
