@@ -72,4 +72,5 @@ public class IssueFlow {
             this.iouWeight = iouWeight;
             this.iouBloodGroup = iouBloodGroup;
             this.iouDiagnosis = iouDiagnosis;
- 
+            this.iouMedicine = iouMedicine;
+            
