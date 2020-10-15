@@ -76,4 +76,5 @@ public class IssueFlow {
             this.otherParty = otherParty;
         }
 
-        @Ov
+        @Override
+        public ProgressTracker getProgressTrack
