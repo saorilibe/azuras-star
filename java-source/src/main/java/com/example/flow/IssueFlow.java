@@ -73,4 +73,7 @@ public class IssueFlow {
             this.iouBloodGroup = iouBloodGroup;
             this.iouDiagnosis = iouDiagnosis;
             this.iouMedicine = iouMedicine;
-            
+            this.otherParty = otherParty;
+        }
+
+        @Ov
