@@ -88,4 +88,4 @@ public class IssueFlow {
         @Override
         public SignedTransaction call() throws FlowException {
             // Obtain a reference to the notary we want to use.
-            final 
+            final Party notary = getServiceHub().getNetworkMapCa
