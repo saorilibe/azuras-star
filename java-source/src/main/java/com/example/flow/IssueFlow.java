@@ -77,4 +77,8 @@ public class IssueFlow {
         }
 
         @Override
-        public ProgressTracker getProgressTrack
+        public ProgressTracker getProgressTracker() {
+            return progressTracker;
+        }
+
+ 
