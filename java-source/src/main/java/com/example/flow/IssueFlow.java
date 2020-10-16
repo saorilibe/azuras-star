@@ -86,4 +86,5 @@ public class IssueFlow {
          */
         @Suspendable
         @Override
-        public SignedTransaction
+        public SignedTransaction call() throws FlowException {
+            // Obtain a refe
