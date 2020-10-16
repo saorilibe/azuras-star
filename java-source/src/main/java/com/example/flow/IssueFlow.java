@@ -82,4 +82,6 @@ public class IssueFlow {
         }
 
         /**
-         * The flow logic is encapsulated 
+         * The flow logic is encapsulated within the call() method.
+         */
+        @Suspendabl
