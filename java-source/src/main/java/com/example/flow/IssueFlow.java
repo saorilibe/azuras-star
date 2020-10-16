@@ -84,4 +84,6 @@ public class IssueFlow {
         /**
          * The flow logic is encapsulated within the call() method.
          */
-        @Suspendabl
+        @Suspendable
+        @Override
+        public SignedTransaction
