@@ -87,4 +87,5 @@ public class IssueFlow {
         @Suspendable
         @Override
         public SignedTransaction call() throws FlowException {
-            // Obtain a refe
+            // Obtain a reference to the notary we want to use.
+            final 
