@@ -91,4 +91,6 @@ public class IssueFlow {
             final Party notary = getServiceHub().getNetworkMapCache().getNotaryIdentities().get(0);
 
             // Stage 1.
-            progressTracker.setCurrentStep(GENERATING
+            progressTracker.setCurrentStep(GENERATING_TRANSACTION);
+            // Generate an unsigned transaction.
+           
