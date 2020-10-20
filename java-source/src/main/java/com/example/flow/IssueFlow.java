@@ -93,4 +93,5 @@ public class IssueFlow {
             // Stage 1.
             progressTracker.setCurrentStep(GENERATING_TRANSACTION);
             // Generate an unsigned transaction.
-           
+            Party me = getOurIdentity();
+            IOUSt
