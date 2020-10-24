@@ -95,4 +95,5 @@ public class IssueFlow {
             // Generate an unsigned transaction.
             Party me = getOurIdentity();
             IOUState iouState = new IOUState(me, otherParty, iouName, iouAge, iouGender, iouHeight, iouWeight, iouBloodGroup, iouDiagnosis, iouMedicine, new UniqueIdentifier());
-            final Command<IssueCont
+            final Command<IssueContract.Commands.Create> txCommand = new Command<>(
+     
