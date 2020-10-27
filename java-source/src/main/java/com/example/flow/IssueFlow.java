@@ -97,4 +97,5 @@ public class IssueFlow {
             IOUState iouState = new IOUState(me, otherParty, iouName, iouAge, iouGender, iouHeight, iouWeight, iouBloodGroup, iouDiagnosis, iouMedicine, new UniqueIdentifier());
             final Command<IssueContract.Commands.Create> txCommand = new Command<>(
                     new IssueContract.Commands.Create(),
-                    ImmutableList.of(iouState.getHospital().getOwningKey(), iouState.getPatient().getOwni
+                    ImmutableList.of(iouState.getHospital().getOwningKey(), iouState.getPatient().getOwningKey()));
+            final TransactionBuilder 
