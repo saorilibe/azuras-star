@@ -98,4 +98,4 @@ public class IssueFlow {
             final Command<IssueContract.Commands.Create> txCommand = new Command<>(
                     new IssueContract.Commands.Create(),
                     ImmutableList.of(iouState.getHospital().getOwningKey(), iouState.getPatient().getOwningKey()));
-            final TransactionBuilder 
+            final TransactionBuilder txBuilder = new TransactionBuilder(notary)
