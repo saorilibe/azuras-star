@@ -102,4 +102,5 @@ public class IssueFlow {
                     .addOutputState(iouState, IOU_CONTRACT_ID)
                     .addCommand(txCommand);
 
-    
+            // Stage 2.
+            progressTracker.setCurrentStep(VERIFYING_TRAN
