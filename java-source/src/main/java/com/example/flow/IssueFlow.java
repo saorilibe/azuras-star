@@ -103,4 +103,5 @@ public class IssueFlow {
                     .addCommand(txCommand);
 
             // Stage 2.
-            progressTracker.setCurrentStep(VERIFYING_TRAN
+            progressTracker.setCurrentStep(VERIFYING_TRANSACTION);
+            // Verify that the transaction is
