@@ -105,4 +105,7 @@ public class IssueFlow {
             // Stage 2.
             progressTracker.setCurrentStep(VERIFYING_TRANSACTION);
             // Verify that the transaction is valid.
-            txBuilder.verify(getServiceHub())
+            txBuilder.verify(getServiceHub());
+
+            // Stage 3.
+            progressTracker.setCurr
