@@ -108,4 +108,5 @@ public class IssueFlow {
             txBuilder.verify(getServiceHub());
 
             // Stage 3.
-            progressTracker.setCurr
+            progressTracker.setCurrentStep(SIGNING_TRANSACTION);
+            // Sign the transacti
