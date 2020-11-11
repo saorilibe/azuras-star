@@ -110,4 +110,6 @@ public class IssueFlow {
             // Stage 3.
             progressTracker.setCurrentStep(SIGNING_TRANSACTION);
             // Sign the transaction.
-            final SignedTransaction partSignedTx = getServiceHub()
+            final SignedTransaction partSignedTx = getServiceHub().signInitialTransaction(txBuilder);
+
+            //
