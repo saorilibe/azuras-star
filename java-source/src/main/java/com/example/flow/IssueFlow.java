@@ -114,4 +114,4 @@ public class IssueFlow {
 
             // Stage 4.
             progressTracker.setCurrentStep(GATHERING_SIGS);
-  
+            // Send the state to the counterparty, and 
