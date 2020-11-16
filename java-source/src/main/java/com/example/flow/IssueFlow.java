@@ -117,4 +117,4 @@ public class IssueFlow {
             // Send the state to the counterparty, and receive it back with their signature.
             FlowSession otherPartySession = initiateFlow(otherParty);
             final SignedTransaction fullySignedTx = subFlow(
-                    new CollectSignatures
+                    new CollectSignaturesFlow(partSignedTx, ImmutableSet.of(othe
