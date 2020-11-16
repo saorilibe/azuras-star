@@ -116,4 +116,5 @@ public class IssueFlow {
             progressTracker.setCurrentStep(GATHERING_SIGS);
             // Send the state to the counterparty, and receive it back with their signature.
             FlowSession otherPartySession = initiateFlow(otherParty);
-            final SignedTransaction fullyS
+            final SignedTransaction fullySignedTx = subFlow(
+                    new CollectSignatures
