@@ -120,4 +120,5 @@ public class IssueFlow {
                     new CollectSignaturesFlow(partSignedTx, ImmutableSet.of(otherPartySession), CollectSignaturesFlow.Companion.tracker()));
 
             // Stage 5.
-            progressT
+            progressTracker.setCurrentStep(FINALISING_TRANSACTION);
+    
