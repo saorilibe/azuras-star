@@ -121,4 +121,4 @@ public class IssueFlow {
 
             // Stage 5.
             progressTracker.setCurrentStep(FINALISING_TRANSACTION);
-    
+            // Notarise and record the transaction in both partie
