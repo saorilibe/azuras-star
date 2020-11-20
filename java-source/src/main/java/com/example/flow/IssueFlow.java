@@ -126,4 +126,5 @@ public class IssueFlow {
         }
     }
 
-    @InitiatedBy(
+    @InitiatedBy(Initiator.class)
+    public static class Acceptor extends FlowL
