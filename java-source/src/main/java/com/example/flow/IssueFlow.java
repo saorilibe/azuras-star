@@ -122,4 +122,8 @@ public class IssueFlow {
             // Stage 5.
             progressTracker.setCurrentStep(FINALISING_TRANSACTION);
             // Notarise and record the transaction in both parties' vaults.
-            return subFlow(new FinalityFlo
+            return subFlow(new FinalityFlow(fullySignedTx));
+        }
+    }
+
+    @InitiatedBy(
