@@ -129,4 +129,6 @@ public class IssueFlow {
     @InitiatedBy(Initiator.class)
     public static class Acceptor extends FlowLogic<SignedTransaction> {
 
-        private final FlowSession otherPartyFlo
+        private final FlowSession otherPartyFlow;
+
+        public Acceptor(FlowSession otherPartyFlow) 
