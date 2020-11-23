@@ -131,4 +131,5 @@ public class IssueFlow {
 
         private final FlowSession otherPartyFlow;
 
-        public Acceptor(FlowSession otherPartyFlow) 
+        public Acceptor(FlowSession otherPartyFlow) {
+            this.otherPartyFlow = otherParty
