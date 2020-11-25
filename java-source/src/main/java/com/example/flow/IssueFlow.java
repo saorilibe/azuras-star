@@ -138,4 +138,5 @@ public class IssueFlow {
         @Suspendable
         @Override
         public SignedTransaction call() throws FlowException {
-            class SignTxFlow extends SignTransac
+            class SignTxFlow extends SignTransactionFlow {
+                private SignTxFlow(FlowSession ot
