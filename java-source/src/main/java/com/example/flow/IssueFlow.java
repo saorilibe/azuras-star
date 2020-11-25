@@ -137,4 +137,5 @@ public class IssueFlow {
 
         @Suspendable
         @Override
-        public SignedTransaction call() throws Fl
+        public SignedTransaction call() throws FlowException {
+            class SignTxFlow extends SignTransac
