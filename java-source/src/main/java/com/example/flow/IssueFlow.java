@@ -140,4 +140,5 @@ public class IssueFlow {
         public SignedTransaction call() throws FlowException {
             class SignTxFlow extends SignTransactionFlow {
                 private SignTxFlow(FlowSession otherPartyFlow, ProgressTracker progressTracker) {
-      
+                    super(otherPartyFlow, progressTracker);
+  
