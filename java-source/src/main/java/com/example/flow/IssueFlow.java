@@ -145,3 +145,5 @@ public class IssueFlow {
 
                 @Override
                 protected void checkTransaction(SignedTransaction stx) {
+                    requireThat(require -> {
+        
