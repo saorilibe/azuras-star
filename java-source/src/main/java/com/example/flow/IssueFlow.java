@@ -146,4 +146,4 @@ public class IssueFlow {
                 @Override
                 protected void checkTransaction(SignedTransaction stx) {
                     requireThat(require -> {
-        
+                        ContractState output = stx.getTx().getOu
