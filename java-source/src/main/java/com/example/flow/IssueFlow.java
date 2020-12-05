@@ -147,4 +147,5 @@ public class IssueFlow {
                 protected void checkTransaction(SignedTransaction stx) {
                     requireThat(require -> {
                         ContractState output = stx.getTx().getOutputs().get(0).getData();
-                        require.using("This must be an IOU transa
+                        require.using("This must be an IOU transaction.", output instanceof IOUState);
+                
