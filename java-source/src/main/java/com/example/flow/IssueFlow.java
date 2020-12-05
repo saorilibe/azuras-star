@@ -148,4 +148,5 @@ public class IssueFlow {
                     requireThat(require -> {
                         ContractState output = stx.getTx().getOutputs().get(0).getData();
                         require.using("This must be an IOU transaction.", output instanceof IOUState);
-                
+                        IOUState iou = (IOUState) output;
+           
