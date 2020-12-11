@@ -150,4 +150,4 @@ public class IssueFlow {
                         require.using("This must be an IOU transaction.", output instanceof IOUState);
                         IOUState iou = (IOUState) output;
                             require.using("I won't accept patients with a name that is missing or has wrong format.", iou.getName() != null);
-                      
+                            require.using("I won't accept patients with age th
