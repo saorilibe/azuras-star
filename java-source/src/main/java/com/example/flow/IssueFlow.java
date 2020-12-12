@@ -151,4 +151,4 @@ public class IssueFlow {
                         IOUState iou = (IOUState) output;
                             require.using("I won't accept patients with a name that is missing or has wrong format.", iou.getName() != null);
                             require.using("I won't accept patients with age that is negtive.", iou.getAge() <= 150);
-                            require.using("I won't acce
+                            require.using("I won't accept patients with a wrong gender information.", iou.g
