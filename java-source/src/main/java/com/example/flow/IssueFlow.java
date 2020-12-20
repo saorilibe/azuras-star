@@ -155,4 +155,4 @@ public class IssueFlow {
                             require.using("I won't accept patients with a wrong blood group information.", iou.getBloodGroup().equals("A(positive)") || iou.getBloodGroup().equals("A(negative)")
                                 || iou.getBloodGroup().equals("B(positive)") || iou.getBloodGroup().equals("B(negative)")
                                 || iou.getBloodGroup().equals("AB(positive)") || iou.getBloodGroup().equals("AB(negative)")
-                                || iou.getBloodGroup
+                                || iou.getBloodGroup().equals("O(positive)") || iou.getBloodGroup().eq
