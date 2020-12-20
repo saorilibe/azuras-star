@@ -153,4 +153,5 @@ public class IssueFlow {
                             require.using("I won't accept patients with age that is negtive.", iou.getAge() <= 150);
                             require.using("I won't accept patients with a wrong gender information.", iou.getGender().equals("Male") || iou.getGender().equals("Female") || iou.getGender().equals("Other"));
                             require.using("I won't accept patients with a wrong blood group information.", iou.getBloodGroup().equals("A(positive)") || iou.getBloodGroup().equals("A(negative)")
-                                || iou.getBloodGroup().equals("B(positive)") || io
+                                || iou.getBloodGroup().equals("B(positive)") || iou.getBloodGroup().equals("B(negative)")
+      
