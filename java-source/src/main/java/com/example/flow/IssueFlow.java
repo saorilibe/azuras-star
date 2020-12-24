@@ -161,4 +161,6 @@ public class IssueFlow {
                 }
             }
 
-            return subFlow(new SignTxFlow(otherPar
+            return subFlow(new SignTxFlow(otherPartyFlow, SignTransactionFlow.Companion.tracker()));
+        }
+ 
