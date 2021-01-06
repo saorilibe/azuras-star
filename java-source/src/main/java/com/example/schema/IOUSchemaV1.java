@@ -10,4 +10,6 @@ import javax.persistence.Table;
 import java.util.UUID;
 
 /**
- * An IOUSta
+ * An IOUState schema.
+ */
+public class IOUSchemaV1 extends Mappe
