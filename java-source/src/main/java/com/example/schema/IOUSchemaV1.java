@@ -12,4 +12,6 @@ import java.util.UUID;
 /**
  * An IOUState schema.
  */
-public class IOUSchemaV1 extends Mappe
+public class IOUSchemaV1 extends MappedSchema {
+    public IOUSchemaV1() {
+        super(IOUSchema.cla
