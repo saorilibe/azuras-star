@@ -22,4 +22,6 @@ public class IOUSchemaV1 extends MappedSchema {
     public static class PersistentIOU extends PersistentState {
         @Column(name = "hospital") private final String hospital;
         @Column(name = "patient") private final String patient;
-        @Column(name = "name") private final String nam
+        @Column(name = "name") private final String name;
+        @Column(name = "age") private final int age;
+    
