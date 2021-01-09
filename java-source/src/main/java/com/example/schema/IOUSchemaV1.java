@@ -17,4 +17,6 @@ public class IOUSchemaV1 extends MappedSchema {
         super(IOUSchema.class, 1, ImmutableList.of(PersistentIOU.class));
     }
 
-    @
+    @Entity
+    @Table(name = "iou_states")
+    public static
