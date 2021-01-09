@@ -20,4 +20,5 @@ public class IOUSchemaV1 extends MappedSchema {
     @Entity
     @Table(name = "iou_states")
     public static class PersistentIOU extends PersistentState {
-        @Column(name = "hospital") private final S
+        @Column(name = "hospital") private final String hospital;
+        @Column(name = "patient") private final String 
