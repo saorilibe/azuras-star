@@ -14,4 +14,7 @@ import java.util.UUID;
  */
 public class IOUSchemaV1 extends MappedSchema {
     public IOUSchemaV1() {
-        super(IOUSchema.cla
+        super(IOUSchema.class, 1, ImmutableList.of(PersistentIOU.class));
+    }
+
+    @
