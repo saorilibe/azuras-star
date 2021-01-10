@@ -25,4 +25,5 @@ public class IOUSchemaV1 extends MappedSchema {
         @Column(name = "name") private final String name;
         @Column(name = "age") private final int age;
         @Column(name = "gender") private final String gender;
-        @Column(name = "height") private fin
+        @Column(name = "height") private final int height;
+        @Column(name = "weight") privat
