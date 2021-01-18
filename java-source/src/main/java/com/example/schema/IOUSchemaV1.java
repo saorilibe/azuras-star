@@ -27,4 +27,5 @@ public class IOUSchemaV1 extends MappedSchema {
         @Column(name = "gender") private final String gender;
         @Column(name = "height") private final int height;
         @Column(name = "weight") private final int weight;
-        @Column(name = "bloo
+        @Column(name = "bloodGroup") private final String bloodGroup;
+        @
