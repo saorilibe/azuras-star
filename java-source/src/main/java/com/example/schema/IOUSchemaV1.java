@@ -29,4 +29,4 @@ public class IOUSchemaV1 extends MappedSchema {
         @Column(name = "weight") private final int weight;
         @Column(name = "bloodGroup") private final String bloodGroup;
         @Column(name = "diagnosis") private final String diagnosis;
-       
+        @Column(name = "medicine") private final String 
