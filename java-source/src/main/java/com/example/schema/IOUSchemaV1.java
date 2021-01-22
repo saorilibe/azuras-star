@@ -30,4 +30,7 @@ public class IOUSchemaV1 extends MappedSchema {
         @Column(name = "bloodGroup") private final String bloodGroup;
         @Column(name = "diagnosis") private final String diagnosis;
         @Column(name = "medicine") private final String medicine;
-        @Column(name = "linear_id") pri
+        @Column(name = "linear_id") private final UUID linearId;
+
+
+        public PersistentIOU(
