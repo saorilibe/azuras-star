@@ -33,4 +33,4 @@ public class IOUSchemaV1 extends MappedSchema {
         @Column(name = "linear_id") private final UUID linearId;
 
 
-        public PersistentIOU(String hospital, String patient, String name, int age, 
+        public PersistentIOU(String hospital, String patient, String name, int age, String gender, int height, int weight, String bloodGroup, String 
