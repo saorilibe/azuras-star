@@ -35,4 +35,6 @@ public class IOUSchemaV1 extends MappedSchema {
 
         public PersistentIOU(String hospital, String patient, String name, int age, String gender, int height, int weight, String bloodGroup, String diagnosis, String medicine, UUID linearId) {
             this.hospital = hospital;
-            this.patient = pa
+            this.patient = patient;
+            this.name = name;
+            this.age
