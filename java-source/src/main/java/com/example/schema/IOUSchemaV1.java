@@ -40,4 +40,5 @@ public class IOUSchemaV1 extends MappedSchema {
             this.age = age;
             this.gender = gender;
             this.height = height;
-       
+            this.weight = weight;
+            this.blo
