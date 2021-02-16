@@ -47,4 +47,5 @@ public class IOUSchemaV1 extends MappedSchema {
             this.linearId = linearId;
         }
 
-        // Default co
+        // Default constructor required by hibernate.
+        public PersistentIOU()
