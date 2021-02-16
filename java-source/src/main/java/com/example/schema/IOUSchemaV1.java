@@ -44,4 +44,7 @@ public class IOUSchemaV1 extends MappedSchema {
             this.bloodGroup = bloodGroup;
             this.diagnosis = diagnosis;
             this.medicine = medicine;
-            th
+            this.linearId = linearId;
+        }
+
+        // Default co
