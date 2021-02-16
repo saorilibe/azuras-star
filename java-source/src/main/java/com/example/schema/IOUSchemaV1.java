@@ -48,4 +48,6 @@ public class IOUSchemaV1 extends MappedSchema {
         }
 
         // Default constructor required by hibernate.
-        public PersistentIOU()
+        public PersistentIOU() {
+            this.hospital = null;
+            this.pat
