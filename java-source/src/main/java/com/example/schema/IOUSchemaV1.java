@@ -52,4 +52,6 @@ public class IOUSchemaV1 extends MappedSchema {
             this.hospital = null;
             this.patient = null;
             this.name = null;
-            th
+            this.age = 0;
+            this.gender = null;
+           
