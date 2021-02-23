@@ -56,4 +56,6 @@ public class IOUSchemaV1 extends MappedSchema {
             this.gender = null;
             this.height = 0;
             this.weight = 0;
-            th
+            this.bloodGroup = null;
+            this.diagnosis = null;
+   
