@@ -66,4 +66,5 @@ public class IOUSchemaV1 extends MappedSchema {
             return hospital;
         }
 
-        
+        public String getPatient() {
+            return 
