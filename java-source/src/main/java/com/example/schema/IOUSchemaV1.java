@@ -78,4 +78,6 @@ public class IOUSchemaV1 extends MappedSchema {
 
         public String getGender() { return gender; }
 
-        public 
+        public int getHeight() { return height; }
+
+        public int getWeight
