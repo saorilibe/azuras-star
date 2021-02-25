@@ -62,4 +62,8 @@ public class IOUSchemaV1 extends MappedSchema {
             this.linearId = null;
         }
 
-        public String getH
+        public String getHospital() {
+            return hospital;
+        }
+
+        
