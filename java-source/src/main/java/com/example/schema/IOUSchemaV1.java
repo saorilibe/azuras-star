@@ -59,4 +59,7 @@ public class IOUSchemaV1 extends MappedSchema {
             this.bloodGroup = null;
             this.diagnosis = null;
             this.medicine = null;
-            this.linearId
+            this.linearId = null;
+        }
+
+        public String getH
