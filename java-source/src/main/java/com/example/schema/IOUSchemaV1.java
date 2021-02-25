@@ -74,4 +74,6 @@ public class IOUSchemaV1 extends MappedSchema {
             return name;
         }
 
-    
+        public int getAge(){ return age; }
+
+       
