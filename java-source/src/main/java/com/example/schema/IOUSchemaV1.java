@@ -82,4 +82,6 @@ public class IOUSchemaV1 extends MappedSchema {
 
         public int getWeight() { return weight; }
 
-        public String ge
+        public String getBloodGroup() { return bloodGroup; }
+
+       
