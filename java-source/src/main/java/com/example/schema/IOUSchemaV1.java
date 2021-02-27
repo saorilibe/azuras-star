@@ -80,4 +80,6 @@ public class IOUSchemaV1 extends MappedSchema {
 
         public int getHeight() { return height; }
 
-        public int getWeight
+        public int getWeight() { return weight; }
+
+        public String ge
