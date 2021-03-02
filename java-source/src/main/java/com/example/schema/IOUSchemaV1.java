@@ -84,4 +84,4 @@ public class IOUSchemaV1 extends MappedSchema {
 
         public String getBloodGroup() { return bloodGroup; }
 
-       
+        public String getDiagnosis() { return diagnosis
