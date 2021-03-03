@@ -89,4 +89,7 @@ public class IOUSchemaV1 extends MappedSchema {
         public String getMedicine() { return medicine; }
 
         public UUID getId() {
-         
+            return linearId;
+        }
+    }
+}
