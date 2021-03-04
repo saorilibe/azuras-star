@@ -97,3 +97,53 @@ app.controller('ModalInstanceCtrl', function ($http, $location, $uibModalInstanc
                 }
             );
         }
+    };
+
+    modalInstance.displayMessage = (message) => {
+        const modalInstanceTwo = $uibModal.open({
+            templateUrl: 'messageContent.html',
+            controller: 'messageCtrl',
+            controllerAs: 'modalInstanceTwo',
+            resolve: { message: () => message }
+        });
+
+        // No behaviour on close / dismiss.
+        modalInstanceTwo.result.then(() => {}, () => {});
+    };
+
+    // Close create IOU modal dialogue.
+    modalInstance.cancel = () => $uibModalInstance.dismiss();
+
+    // Validate the IOU.
+    function invalidFormInput() {
+        return (modalInstance.form.medicine == null) || (modalInstance.form.diagnosis == null) ||
+                (modalInstance.form.bloodGroup == null) || isNaN(modalInstance.form.weight) ||
+                isNaN(modalInstance.form.height) || (modalInstance.form.gender == null) ||
+                 isNaN(modalInstance.form.age) || (modalInstance.form.name == null) ||
+                  (modalInstance.form.counterparty === undefined);
+    }
+});
+
+// Controller for success/fail modal dialogue.
+app.controller('messageCtrl', function ($uibModalInstance, message) {
+    const modalInstanceTwo = this;
+    modalInstanceTwo.message = message.data;
+});
+
+
+
+
+/**
+ * Filters out all duplicate items from an array by checking the specified key
+ * @param [key] {string} the name of the attribute of each object to compare for uniqueness
+ if the key is empty, the entire object will be compared
+ if the key === false then no filtering will be performed
+ * @return {array}
+ */
+app.filter('unique', function () {
+
+  return function (items, filterOn) {
+
+    if (filterOn === false) {
+      return items;
+    }
