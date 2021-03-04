@@ -78,3 +78,32 @@ public class IOUState implements LinearState, QueryableState {
     @Override public List<AbstractParty> getParticipants() {
         return Arrays.asList(hospital, patient);
     }
+
+    @Override public PersistentState generateMappedObject(MappedSchema schema) {
+        if (schema instanceof IOUSchemaV1) {
+            return new IOUSchemaV1.PersistentIOU(
+                    this.hospital.getName().toString(),
+                    this.patient.getName().toString(),
+                    this.getName(),
+                    this.age,
+                    this.getGender(),
+                    this.height,
+                    this.weight,
+                    this.getBloodGroup(),
+                    this.getDiagnosis(),
+                    this.getMedicine(),
+                    this.linearId.getId());
+        } else {
+            throw new IllegalArgumentException("Unrecognised schema $schema");
+        }
+    }
+
+    @Override public Iterable<MappedSchema> supportedSchemas() {
+        return ImmutableList.of(new IOUSchemaV1());
+    }
+
+    @Override
+    public String toString() {
+        return String.format("IOUState(hospital=%s, patient=%s, name=%s, age=%s, gender=%s, height=%s, weight=%s, bloodGroup=%s, diagnosis=%s, medicine=%s, linearId=%s)", hospital, patient, name, age, gender, height, weight, bloodGroup, diagnosis, medicine, linearId);
+    }
+}
