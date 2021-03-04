@@ -49,3 +49,51 @@ app.controller('DemoAppController', function($http, $location, $uibModal) {
 
         modalInstance.result.then(() => {}, () => {});
     };
+
+    demoApp.getIOUs = () => $http.get(apiBaseURL + "ious")
+        .then((response) => demoApp.ious = Object.keys(response.data)
+            .map((key) => response.data[key].state.data)
+            .reverse());
+
+    demoApp.getMyIOUs = () => $http.get(apiBaseURL + "my-ious")
+        .then((response) => demoApp.myious = Object.keys(response.data)
+            .map((key) => response.data[key].state.data)
+            .reverse());
+
+    demoApp.getIOUs();
+    demoApp.getMyIOUs();
+
+});
+
+app.controller('ModalInstanceCtrl', function ($http, $location, $uibModalInstance, $uibModal, demoApp, apiBaseURL, peers) {
+    const modalInstance = this;
+
+    modalInstance.peers = peers;
+    modalInstance.form = {};
+    modalInstance.formError = false;
+
+    // Validate and create IOU.
+    modalInstance.create = () => {
+        if (invalidFormInput()) {
+            modalInstance.formError = true;
+        } else {
+            modalInstance.formError = false;
+
+            $uibModalInstance.close();
+
+
+            const createIOUEndpoint = `${apiBaseURL}create-iou?partyName=${modalInstance.form.counterparty}&iouName=${modalInstance.form.name}&iouAge=${modalInstance.form.age}&iouGender=${modalInstance.form.gender}&iouHeight=${modalInstance.form.height}&iouWeight=${modalInstance.form.weight}&iouBloodGroup=${modalInstance.form.bloodGroup}&iouDiagnosis=${modalInstance.form.diagnosis}&iouMedicine=${modalInstance.form.medicine}`;
+
+
+            // Create PO and handle success / fail responses.
+            $http.put(createIOUEndpoint).then(
+                (result) => {
+                    modalInstance.displayMessage(result);
+                    demoApp.getIOUs();
+                    demoApp.getMyIOUs();
+                },
+                (result) => {
+                    modalInstance.displayMessage(result);
+                }
+            );
+        }
