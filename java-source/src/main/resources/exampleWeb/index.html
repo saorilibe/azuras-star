@@ -122,3 +122,63 @@ COMING WEEKS WE'LL WRITE A TUTORIAL ON HOW BEST TO DO THIS.
                     <div class="col-md-10">
                         <div class="panel-group" id="accordion">
                             <div ng-hide="demoApp.thisNode === 'O=PartyA, L=London, C=GB'" class="panel" id="health">
+                                <div class="panel-primary">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            My Health Status:
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div>
+                                    <br/>
+                                    <div ng-show="!demoApp.ious.length" class="panel-body">Your latest health information.</div>
+                                    <div ng-repeat="iou in demoApp.ious|limitTo:1" class="panel panel-default">
+                                        <div class="panel-body">
+                                            <table class=" table table-responsive">
+                                                <tr>
+                                                    <td><h4>Hospital:</h4></td>
+                                                    <td>{{iou.hospital}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>Name:</h4></td>
+                                                    <td>{{iou.name}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>Age:</h4></td>
+                                                    <td>{{iou.age}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>Gender:</h4></td>
+                                                    <td>{{iou.gender}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>Height:</h4></td>
+                                                    <td>{{iou.height}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>Weight:</h4></td>
+                                                    <td>{{iou.weight}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>Blood Group:</h4></td>
+                                                    <td>{{iou.bloodGroup}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h4>Medicine:</h4></td>
+                                                    <td>{{iou.medicine}}</td>
+                                                </tr>
+                                            </table>
+
+                                        </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div ng-hide="demoApp.thisNode === 'O=PartyA, L=London, C=GB'" class="panel" id="patious">
+                                <div class="panel-primary">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            History:
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div>
