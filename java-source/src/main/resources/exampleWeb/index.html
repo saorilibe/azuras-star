@@ -238,3 +238,63 @@ COMING WEEKS WE'LL WRITE A TUTORIAL ON HOW BEST TO DO THIS.
                     </div>
                     <div class="col-md-1"></div>
                 </div>
+            </div>
+            <!-- /#page-content-wrapper -->
+        </div>
+    </div>
+    </div>
+
+    <!-- ------------------------------------ -->
+
+    <script type="text/ng-template" id="demoAppModal.html">
+        <div class="modal-header">
+            <h4 class="modal-title">Add new IOU</h4>
+        </div>
+        <form>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="counterparty" class="control-label">Counter-party:</label>
+                    <select ng-model="modalInstance.form.counterparty" class="form-control" id="counterparty"
+                            ng-options="peer as peer for peer in modalInstance.peers">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="name" class="control-label">Name (String):</label>
+                    <input type="text" ng-model="modalInstance.form.name" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="age" class="control-label">Age (Int):</label>
+                    <input type="text" ng-model="modalInstance.form.age" class="form-control" id="age">
+                </div>
+                <div class="form-group">
+                    <label for="gender" class="control-label">Gender (String):</label>
+                    <input type="text" ng-model="modalInstance.form.gender" class="form-control" id="gender">
+                </div>
+                <div class="form-group">
+                    <label for="height" class="control-label">Height (Int)(in cm):</label>
+                    <input type="text" ng-model="modalInstance.form.height" class="form-control" id="height">
+                </div>
+                <div class="form-group">
+                    <label for="weight" class="control-label">Weight (Int)(in kg):</label>
+                    <input type="text" ng-model="modalInstance.form.weight" class="form-control" id="weight">
+                </div>
+                <div class="form-group">
+                    <label for="bloodGroup" class="control-label">Blood Group (String)(e.g B(positive)):</label>
+                    <input type="text" ng-model="modalInstance.form.bloodGroup" class="form-control" id="bloodGroup">
+                </div>
+                <div class="form-group">
+                    <label for="diagnosis" class="control-label">Diagnosis (String):</label>
+                    <input type="text" ng-model="modalInstance.form.diagnosis" class="form-control" id="diagnosis">
+                </div>
+                <div class="form-group">
+                    <label for="medicine" class="control-label">Medicine (String):</label>
+                    <input type="text" ng-model="modalInstance.form.medicine" class="form-control" id="medicine">
+                </div>
+
+                <div ng-show="modalInstance.formError" class="form-group">
+                    <div class="alert alert-danger" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span>
+                        Enter valid IOU parameters
+                    </div>
+                </div>
