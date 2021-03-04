@@ -182,3 +182,59 @@ COMING WEEKS WE'LL WRITE A TUTORIAL ON HOW BEST TO DO THIS.
                                     </div>
                                 </div>
                                 <div>
+
+                                    <!--<input type="search" ng-model="search" placeholder="filter patients..." aria-label="filter patients" />-->
+                                    <!--<div ng-show="!demoApp.ious.length" class="panel-body">History of all Records.</div>-->
+                                    <div ng-repeat="iou in demoApp.ious" class="panel panel-default">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li>Hospital: {{iou.hospital}}</li>
+                                                <!--<li>Patient: {{iou.patient}}</li>-->
+                                                <li>Name: {{iou.name}}</li>
+                                                <li>Age: {{iou.age}}</li>
+                                                <li>Gender: {{iou.gender}}</li>
+                                                <li>Height: {{iou.height}}</li>
+                                                <li>Weight: {{iou.weight}}</li>
+                                                <li>Blood Group: {{iou.bloodGroup}}</li>
+                                                <li>Diagnosis: {{iou.diagnosis}}</li>
+                                                <li>Medicine: {{iou.medicine}}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div ng-hide="demoApp.thisNode !== 'O=PartyA, L=London, C=GB'" class="panel" id="hospious">
+                                    <div class="panel-primary">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                History:
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="input-group" id="searchPat">
+                                        <span class="input-group-addon">Search patient:</span>
+                                        <input type="search" class="form-control" ng-model="search" placeholder="filter patients..." aria-label="filter patients" />
+                                    </div>
+                                    <div>
+                                        <div ng-repeat="iou in demoApp.myious | filter:search" class="panel panel-default">
+                                            <div class="panel-body">
+                                                <ul>
+                                                    <!--<li>Hospital: {{iou.hospital}}</li>-->
+                                                    <li>Patient: {{iou.patient}}</li>
+                                                    <li>Name: {{iou.name}}</li>
+                                                    <li>Age: {{iou.age}}</li>
+                                                    <li>Gender: {{iou.gender}}</li>
+                                                    <li>Height: {{iou.height}}</li>
+                                                    <li>Weight: {{iou.weight}}</li>
+                                                    <li>Blood Group: {{iou.bloodGroup}}</li>
+                                                    <li>Diagnosis: {{iou.diagnosis}}</li>
+                                                    <li>Medicine: {{iou.medicine}}</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
