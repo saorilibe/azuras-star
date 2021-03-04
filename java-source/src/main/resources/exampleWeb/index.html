@@ -298,3 +298,19 @@ COMING WEEKS WE'LL WRITE A TUTORIAL ON HOW BEST TO DO THIS.
                         Enter valid IOU parameters
                     </div>
                 </div>
+            </div>
+            <div class="modal-footer">
+                <button ng-click="modalInstance.cancel()" type="button" class="btn btn-default">Close</button>
+                <button ng-click="modalInstance.create()" type="button" class="btn btn-primary">Create IOU</button>
+            </div>
+        </form>
+    </script>
+    <script type="text/ng-template" id="messageContent.html">
+        <div class="modal-body" id="modal-body">
+            {{ modalInstanceTwo.message }}
+        </div>
+    </script>
+
+
+</body>
+</html>
