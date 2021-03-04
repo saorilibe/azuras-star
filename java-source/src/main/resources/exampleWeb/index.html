@@ -70,3 +70,55 @@ COMING WEEKS WE'LL WRITE A TUTORIAL ON HOW BEST TO DO THIS.
 <body ng-app="demoAppModule" ng-controller="DemoAppController as demoApp">
     <nav class="navbar navbar-default navbar-fixed-top" style="border-width:0px">
         <div class="container-fluid" style="background:black">
+            <div class="navbar-header" >
+                <a class="navbar-brand" style="color:#d9edf7"  href="#">Care Chain</a>
+            </div>
+            <div class="navbar-right">
+                <a class="navbar-brand" style="color:#d9edf7" href="#">{{demoApp.thisNode}}</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="wrapper" class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper" class="col-md-2" style="text-align:center">
+                <ul class="nav sidebar-nav">
+                    <li>
+                        <button ng-hide="demoApp.thisNode !== 'O=PartyA, L=London, C=GB'" ng-click="demoApp.openModal()" type="button" class="btn btn-primary navbar-btn">New Patient</button>
+                    </li>
+                    <!--<li ng-hide="demoApp.thisNode === 'O=PartyA, L=London, C=GB'">-->
+                        <!--<a href="#health">My Health Status</a>-->
+                    <!--</li>-->
+                    <li ng-hide="demoApp.thisNode !== 'O=PartyA, L=London, C=GB'">
+                        <!--<a href="#">Patients</a>-->
+                        <h4 style="color:white">Patients</h4>
+                        <div ng-repeat="iou in demoApp.myious | unique:'patient'">
+                            <ul>
+                                <li style="color:white">{{iou.patient}}</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li ng-hide="demoApp.thisNode === 'O=PartyA, L=London, C=GB'">
+                        <!--<a href="#patious">History</a>-->
+                        <h4 style="color:white">Hospitals</h4>
+                        <div ng-repeat="iou in demoApp.ious | unique:'hospital'">
+                            <ul>
+                                <li style="color:white">{{iou.hospital}}</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!--<li ng-hide="demoApp.thisNode !== 'O=PartyA, L=London, C=GB'">-->
+                        <!--<a href="#hospious">History</a>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper" class="col-md-10">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="panel-group" id="accordion">
+                            <div ng-hide="demoApp.thisNode === 'O=PartyA, L=London, C=GB'" class="panel" id="health">
