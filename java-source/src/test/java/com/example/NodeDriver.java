@@ -15,4 +15,5 @@ import java.util.List;
 import static net.corda.testing.driver.Driver.driver;
 
 /**
- * This file is exclusively for
+ * This file is exclusively for being able to run your nodes through an IDE.
+ * Do n
