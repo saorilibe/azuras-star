@@ -16,4 +16,6 @@ import static net.corda.testing.driver.Driver.driver;
 
 /**
  * This file is exclusively for being able to run your nodes through an IDE.
- * Do n
+ * Do not use in a production environment.
+ */
+public class NodeDriver
