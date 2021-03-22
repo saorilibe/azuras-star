@@ -23,4 +23,5 @@ public class NodeDriver {
         final User user = new User("user1", "test", ImmutableSet.of("ALL"));
         driver(new DriverParameters().withWaitForAllNodesToFinish(true), dsl -> {
                     List<CordaFuture<NodeHandle>> nodeFutures = ImmutableList.of(
-                            dsl.st
+                            dsl.startNode(new NodeParameters()
+                                    .with
