@@ -24,4 +24,5 @@ public class NodeDriver {
         driver(new DriverParameters().withWaitForAllNodesToFinish(true), dsl -> {
                     List<CordaFuture<NodeHandle>> nodeFutures = ImmutableList.of(
                             dsl.startNode(new NodeParameters()
-                                    .withProvidedName(new CordaX500Name("PartyA", "London", "
+                                    .withProvidedName(new CordaX500Name("PartyA", "London", "GB"))
+                                    .withCust
