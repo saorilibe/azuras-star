@@ -25,4 +25,4 @@ public class NodeDriver {
                     List<CordaFuture<NodeHandle>> nodeFutures = ImmutableList.of(
                             dsl.startNode(new NodeParameters()
                                     .withProvidedName(new CordaX500Name("PartyA", "London", "GB"))
-                                    .withCust
+                                    .withCustomOverrides(ImmutableMap.of("rpcSettings.address", "localhost:1
