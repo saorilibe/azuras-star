@@ -29,4 +29,4 @@ public class NodeDriver {
                                     .withRpcUsers(ImmutableList.of(user))),
                             dsl.startNode(new NodeParameters()
                                     .withProvidedName(new CordaX500Name("PartyB", "New York", "US"))
-  
+                                    .withCustomOverrides(Imm
