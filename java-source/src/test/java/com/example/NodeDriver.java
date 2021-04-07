@@ -33,4 +33,4 @@ public class NodeDriver {
                                     .withRpcUsers(ImmutableList.of(user))),
                             dsl.startNode(new NodeParameters()
                                     .withProvidedName(new CordaX500Name("PartyC", "Paris", "FR"))
-                                    .withCustomOverrides(ImmutableMap.of("rpcSetting
+                                    .withCustomOverrides(ImmutableMap.of("rpcSettings.address", "localhost:10014", "rpcSettings.adminAddress", "local
