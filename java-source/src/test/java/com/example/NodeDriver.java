@@ -42,4 +42,4 @@ public class NodeDriver {
                         dsl.startWebserver(nodeFutures.get(2).get());
 
                     } catch (Throwable e) {
-                        S
+                        System.err.println("Encountered exception in node startup: " + e.ge
