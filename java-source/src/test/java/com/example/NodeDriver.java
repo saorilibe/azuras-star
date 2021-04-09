@@ -37,4 +37,5 @@ public class NodeDriver {
                                     .withRpcUsers(ImmutableList.of(user))));
 
                     try {
-                        dsl
+                        dsl.startWebserver(nodeFutures.get(0).get());
+     
