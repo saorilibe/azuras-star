@@ -41,4 +41,5 @@ public class NodeDriver {
                         dsl.startWebserver(nodeFutures.get(1).get());
                         dsl.startWebserver(nodeFutures.get(2).get());
 
-                 
+                    } catch (Throwable e) {
+                        S
