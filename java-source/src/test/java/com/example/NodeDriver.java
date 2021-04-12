@@ -43,4 +43,7 @@ public class NodeDriver {
 
                     } catch (Throwable e) {
                         System.err.println("Encountered exception in node startup: " + e.getMessage());
-                        e.printStackTra
+                        e.printStackTrace();
+                    }
+
+                    return nu
