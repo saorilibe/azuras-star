@@ -86,3 +86,31 @@ public class IOUContractTests {
             return null;
         }));
     }
+
+    @Test
+    public void hospitalIsNotPatient() {
+        ledger(ledgerServices, (ledger -> {
+            ledger.transaction(tx -> {
+                tx.output(IOU_CONTRACT_ID, new IOUState(iouName, megaCorp.getParty(), megaCorp.getParty(), new UniqueIdentifier()));
+                tx.command(ImmutableList.of(megaCorp.getPublicKey(), miniCorp.getPublicKey()), new IssueContract.Commands.Create());
+                tx.failsWith("The hospital and the patient cannot be the same entity.");
+                return null;
+            });
+            return null;
+        }));
+    }
+
+    @Test
+//    public void cannotCreateNegativeValueIOUs() {
+    public void cannotCreateNullValueIOUs() {
+        ledger(ledgerServices, (ledger -> {
+            ledger.transaction(tx -> {
+                tx.output(IOU_CONTRACT_ID, new IOUState(null, miniCorp.getParty(), megaCorp.getParty(), new UniqueIdentifier()));
+                tx.command(ImmutableList.of(megaCorp.getPublicKey(), miniCorp.getPublicKey()), new IssueContract.Commands.Create());
+                tx.failsWith("The IOU's value must be not be null");
+                return null;
+            });
+            return null;
+        }));
+    }
+}
