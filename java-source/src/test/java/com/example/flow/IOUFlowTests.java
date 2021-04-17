@@ -91,3 +91,49 @@ public class IOUFlowTests {
             assertEquals(signedTx, node.getServices().getValidatedTransactions().getTransaction(signedTx.getId()));
         }
     }
+
+    @Test
+    public void recordedTransactionHasNoInputsAndASingleOutputTheInputIOU() throws Exception {
+        //Integer iouValue = 1;
+        String iouName = "F";
+        IssueFlow.Initiator flow = new IssueFlow.Initiator(iouName, b.getInfo().getLegalIdentities().get(0));
+        CordaFuture<SignedTransaction> future = a.startFlow(flow);
+        network.runNetwork();
+        SignedTransaction signedTx = future.get();
+
+        // We check the recorded transaction in both vaults.
+        for (StartedMockNode node : ImmutableList.of(a, b)) {
+            SignedTransaction recordedTx = node.getServices().getValidatedTransactions().getTransaction(signedTx.getId());
+            List<TransactionState<ContractState>> txOutputs = recordedTx.getTx().getOutputs();
+            assert (txOutputs.size() == 1);
+
+            IOUState recordedState = (IOUState) txOutputs.get(0).getData();
+            assertEquals(recordedState.getName(), iouName);
+            assertEquals(recordedState.getHospital(), a.getInfo().getLegalIdentities().get(0));
+            assertEquals(recordedState.getPatient(), b.getInfo().getLegalIdentities().get(0));
+        }
+    }
+
+    @Test
+    public void flowRecordsTheCorrectIOUInBothPartiesVaults() throws Exception {
+        //Integer iouValue = 1;
+        String iouName = "F";
+        IssueFlow.Initiator flow = new IssueFlow.Initiator(iouName, b.getInfo().getLegalIdentities().get(0));
+        CordaFuture<SignedTransaction> future = a.startFlow(flow);
+        network.runNetwork();
+        future.get();
+
+        // We check the recorded IOU in both vaults.
+        for (StartedMockNode node : ImmutableList.of(a, b)) {
+            node.transaction(() -> {
+                List<StateAndRef<IOUState>> ious = node.getServices().getVaultService().queryBy(IOUState.class).getStates();
+                assertEquals(1, ious.size());
+                IOUState recordedState = ious.get(0).getState().getData();
+                assertEquals(recordedState.getName(), iouName);
+                assertEquals(recordedState.getHospital(), a.getInfo().getLegalIdentities().get(0));
+                assertEquals(recordedState.getPatient(), b.getInfo().getLegalIdentities().get(0));
+                return null;
+            });
+        }
+    }
+}
