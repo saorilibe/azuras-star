@@ -10,4 +10,5 @@ import okhttp3.Request
 import org.junit.Test
 import kotlin.test.assertEquals
 
-c
+class DriverBasedTests {
+    val bankA = TestIdentity(CordaX5
