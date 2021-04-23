@@ -11,4 +11,5 @@ import org.junit.Test
 import kotlin.test.assertEquals
 
 class DriverBasedTests {
-    val bankA = TestIdentity(CordaX5
+    val bankA = TestIdentity(CordaX500Name("BankA", "", "GB"))
+    val bankB = TestIdentity
