@@ -15,4 +15,5 @@ class DriverBasedTests {
     val bankB = TestIdentity(CordaX500Name("BankB", "", "US"))
 
     @Test
-    fun `nod
+    fun `node test`() {
+        driver(DriverParameters
