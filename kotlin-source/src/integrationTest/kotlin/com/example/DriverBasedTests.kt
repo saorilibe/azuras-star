@@ -16,4 +16,5 @@ class DriverBasedTests {
 
     @Test
     fun `node test`() {
-        driver(DriverParameters
+        driver(DriverParameters(isDebug = true, startNodesInProcess = true)) {
+     
