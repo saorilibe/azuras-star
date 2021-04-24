@@ -12,4 +12,7 @@ import kotlin.test.assertEquals
 
 class DriverBasedTests {
     val bankA = TestIdentity(CordaX500Name("BankA", "", "GB"))
-    val bankB = TestIdentity
+    val bankB = TestIdentity(CordaX500Name("BankB", "", "US"))
+
+    @Test
+    fun `nod
