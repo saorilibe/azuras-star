@@ -18,4 +18,5 @@ class DriverBasedTests {
     fun `node test`() {
         driver(DriverParameters(isDebug = true, startNodesInProcess = true)) {
             // This starts two nodes simultaneously with startNode, which returns a future that completes when the node
-            // has completed startup. Then these are all resolved with getOrThrow which
+            // has completed startup. Then these are all resolved with getOrThrow which returns the NodeHandle list.
+           
