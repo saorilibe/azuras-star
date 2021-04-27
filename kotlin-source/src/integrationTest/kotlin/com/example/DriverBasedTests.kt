@@ -17,4 +17,4 @@ class DriverBasedTests {
     @Test
     fun `node test`() {
         driver(DriverParameters(isDebug = true, startNodesInProcess = true)) {
-            // This starts two nodes simultaneously with startNode, 
+            // This starts two nodes simultaneously with startNode, which returns a future that completes when the nod
