@@ -21,4 +21,5 @@ class DriverBasedTests {
             // has completed startup. Then these are all resolved with getOrThrow which returns the NodeHandle list.
             val (partyAHandle, partyBHandle) = listOf(
                     startNode(providedName = bankA.name),
-     
+                    startNode(providedName = bankB.name)
+        
