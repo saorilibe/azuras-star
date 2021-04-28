@@ -22,4 +22,6 @@ class DriverBasedTests {
             val (partyAHandle, partyBHandle) = listOf(
                     startNode(providedName = bankA.name),
                     startNode(providedName = bankB.name)
-        
+            ).map { it.getOrThrow() }
+
+            // This
