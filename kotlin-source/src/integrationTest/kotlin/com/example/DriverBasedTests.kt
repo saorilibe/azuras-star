@@ -24,4 +24,5 @@ class DriverBasedTests {
                     startNode(providedName = bankB.name)
             ).map { it.getOrThrow() }
 
-            // This test makes an RPC call to retrieve another node's name fro
+            // This test makes an RPC call to retrieve another node's name from the network map, to verify that the
+            // nodes have starte
