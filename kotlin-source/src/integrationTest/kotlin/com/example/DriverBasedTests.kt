@@ -27,4 +27,5 @@ class DriverBasedTests {
             // This test makes an RPC call to retrieve another node's name from the network map, to verify that the
             // nodes have started and can communicate. This is a very basic test, in practice tests would be starting
             // flows, and verifying the states in the vault and other important metrics to ensure that your CorDapp is
-       
+            // working as intended.
+            assertEquals
