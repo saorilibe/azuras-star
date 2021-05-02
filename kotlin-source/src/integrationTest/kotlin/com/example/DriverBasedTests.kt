@@ -25,4 +25,5 @@ class DriverBasedTests {
             ).map { it.getOrThrow() }
 
             // This test makes an RPC call to retrieve another node's name from the network map, to verify that the
-            // nodes have started and can communicate. This is a very basic test, i
+            // nodes have started and can communicate. This is a very basic test, in practice tests would be starting
+            //
