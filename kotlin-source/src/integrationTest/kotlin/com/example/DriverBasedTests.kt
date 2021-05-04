@@ -29,4 +29,9 @@ class DriverBasedTests {
             // flows, and verifying the states in the vault and other important metrics to ensure that your CorDapp is
             // working as intended.
             assertEquals(partyAHandle.rpc.wellKnownPartyFromX500Name(bankB.name)!!.name, bankB.name)
-            assertEquals(partyBHandle.rpc.wellKnownPartyFromX500Name(bankA.name)!!.name, bank
+            assertEquals(partyBHandle.rpc.wellKnownPartyFromX500Name(bankA.name)!!.name, bankA.name)
+        }
+    }
+
+    @Test
+    fun `node webs
