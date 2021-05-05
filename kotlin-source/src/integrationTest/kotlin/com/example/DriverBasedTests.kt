@@ -38,4 +38,5 @@ class DriverBasedTests {
         driver(DriverParameters(isDebug = true, startNodesInProcess = true)) {
             val nodeHandles = listOf(
                     startNode(providedName = bankA.name),
-                
+                    startNode(providedName = bankB.name)
+            ).map {
