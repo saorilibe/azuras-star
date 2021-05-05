@@ -37,4 +37,5 @@ class DriverBasedTests {
     fun `node webserver test`() {
         driver(DriverParameters(isDebug = true, startNodesInProcess = true)) {
             val nodeHandles = listOf(
-                    sta
+                    startNode(providedName = bankA.name),
+                
