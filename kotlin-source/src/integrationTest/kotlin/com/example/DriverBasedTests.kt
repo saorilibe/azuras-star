@@ -36,4 +36,5 @@ class DriverBasedTests {
     @Test
     fun `node webserver test`() {
         driver(DriverParameters(isDebug = true, startNodesInProcess = true)) {
-            val node
+            val nodeHandles = listOf(
+                    sta
