@@ -39,4 +39,6 @@ class DriverBasedTests {
             val nodeHandles = listOf(
                     startNode(providedName = bankA.name),
                     startNode(providedName = bankB.name)
-            ).map {
+            ).map { it.getOrThrow() }
+
+            // This test starts e
