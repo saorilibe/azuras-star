@@ -41,4 +41,5 @@ class DriverBasedTests {
                     startNode(providedName = bankB.name)
             ).map { it.getOrThrow() }
 
-            // This test starts each node's webserver and makes an HTTP call to 
+            // This test starts each node's webserver and makes an HTTP call to retrieve the body of a GET endpoint on
+            // the node's webserv
