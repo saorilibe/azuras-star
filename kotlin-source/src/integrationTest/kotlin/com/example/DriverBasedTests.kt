@@ -41,4 +41,4 @@ class DriverBasedTests {
                     startNode(providedName = bankB.name)
             ).map { it.getOrThrow() }
 
-            // This test starts e
+            // This test starts each node's webserver and makes an HTTP call to 
