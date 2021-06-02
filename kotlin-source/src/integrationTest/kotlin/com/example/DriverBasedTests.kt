@@ -42,4 +42,4 @@ class DriverBasedTests {
             ).map { it.getOrThrow() }
 
             // This test starts each node's webserver and makes an HTTP call to retrieve the body of a GET endpoint on
-            // the node's webserv
+            // the node's webserver, to verify that the nodes' webservers have star
