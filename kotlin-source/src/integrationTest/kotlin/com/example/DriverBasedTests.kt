@@ -43,4 +43,5 @@ class DriverBasedTests {
 
             // This test starts each node's webserver and makes an HTTP call to retrieve the body of a GET endpoint on
             // the node's webserver, to verify that the nodes' webservers have started and have loaded the API.
-            nodeHandles.fo
+            nodeHandles.forEach { nodeHandle ->
+                val webserverHand
