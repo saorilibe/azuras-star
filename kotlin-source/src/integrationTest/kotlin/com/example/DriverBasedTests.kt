@@ -46,4 +46,5 @@ class DriverBasedTests {
             nodeHandles.forEach { nodeHandle ->
                 val webserverHandle = startWebserver(nodeHandle).getOrThrow()
 
-                val node
+                val nodeAddress = webserverHandle.listenAddress
+           
