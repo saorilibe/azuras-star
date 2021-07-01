@@ -49,4 +49,6 @@ class DriverBasedTests {
                 val nodeAddress = webserverHandle.listenAddress
                 val url = "http://$nodeAddress/api/example/ious"
 
-                val request = Request.Builder().url(url
+                val request = Request.Builder().url(url).build()
+                val client = OkHttpClient()
+      
