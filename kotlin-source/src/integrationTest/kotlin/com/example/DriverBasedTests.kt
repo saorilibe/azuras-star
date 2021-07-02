@@ -51,4 +51,6 @@ class DriverBasedTests {
 
                 val request = Request.Builder().url(url).build()
                 val client = OkHttpClient()
-                val response = client.newCall(request).exec
+                val response = client.newCall(request).execute()
+
+                assertEquals("[ ]", response.body(
