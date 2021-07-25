@@ -11,4 +11,6 @@ import net.corda.core.node.services.IdentityService
 import net.corda.core.node.services.Vault
 import net.corda.core.node.services.vault.QueryCriteria
 import net.corda.core.node.services.vault.builder
-import net.corda.core.utilities.g
+import net.corda.core.utilities.getOrThrow
+import net.corda.core.utilities.loggerFor
+import org.s
