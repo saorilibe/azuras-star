@@ -10,4 +10,5 @@ import net.corda.core.messaging.vaultQueryBy
 import net.corda.core.node.services.IdentityService
 import net.corda.core.node.services.Vault
 import net.corda.core.node.services.vault.QueryCriteria
-import net.corda.core.node.services
+import net.corda.core.node.services.vault.builder
+import net.corda.core.utilities.g
