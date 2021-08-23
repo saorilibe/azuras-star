@@ -18,4 +18,6 @@ import javax.ws.rs.*
 import javax.ws.rs.core.MediaType
 import javax.ws.rs.core.Response
 import javax.ws.rs.core.Response.Status.BAD_REQUEST
-import javax.ws.r
+import javax.ws.rs.core.Response.Status.CREATED
+
+val SERVICE_NAMES = listOf("Nota
