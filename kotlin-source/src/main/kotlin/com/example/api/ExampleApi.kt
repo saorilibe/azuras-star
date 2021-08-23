@@ -17,4 +17,5 @@ import org.slf4j.Logger
 import javax.ws.rs.*
 import javax.ws.rs.core.MediaType
 import javax.ws.rs.core.Response
-import jav
+import javax.ws.rs.core.Response.Status.BAD_REQUEST
+import javax.ws.r
