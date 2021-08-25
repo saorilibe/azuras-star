@@ -20,4 +20,6 @@ import javax.ws.rs.core.Response
 import javax.ws.rs.core.Response.Status.BAD_REQUEST
 import javax.ws.rs.core.Response.Status.CREATED
 
-val SERVICE_NAMES = listOf("Nota
+val SERVICE_NAMES = listOf("Notary", "Network Map Service")
+
+// This API is acce
