@@ -22,4 +22,4 @@ import javax.ws.rs.core.Response.Status.CREATED
 
 val SERVICE_NAMES = listOf("Notary", "Network Map Service")
 
-// This API is acce
+// This API is accessible from /api/example. All paths specified 
