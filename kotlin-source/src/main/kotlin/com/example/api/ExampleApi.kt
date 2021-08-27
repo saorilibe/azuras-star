@@ -25,4 +25,4 @@ val SERVICE_NAMES = listOf("Notary", "Network Map Service")
 // This API is accessible from /api/example. All paths specified below are relative to it.
 @Path("example")
 class ExampleApi(private val rpcOps: CordaRPCOps) {
-    private va
+    private val myLegalName: CordaX500Name = rpcOps.nodeInfo().legal
