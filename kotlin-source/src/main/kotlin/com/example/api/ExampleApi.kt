@@ -28,3 +28,4 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
     private val myLegalName: CordaX500Name = rpcOps.nodeInfo().legalIdentities.first().name
 
     companion object {
+        private val logger: Logger = loggerF
