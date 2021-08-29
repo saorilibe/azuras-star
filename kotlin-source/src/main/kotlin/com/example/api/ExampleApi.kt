@@ -37,4 +37,7 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
     @GET
     @Path("me")
     @Produces(MediaType.APPLICATION_JSON)
-    fun whoami
+    fun whoami() = mapOf("me" to myLegalName)
+
+    /**
+     * Returns all
