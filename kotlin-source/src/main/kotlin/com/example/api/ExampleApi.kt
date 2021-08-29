@@ -36,4 +36,5 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
      */
     @GET
     @Path("me")
-  
+    @Produces(MediaType.APPLICATION_JSON)
+    fun whoami
