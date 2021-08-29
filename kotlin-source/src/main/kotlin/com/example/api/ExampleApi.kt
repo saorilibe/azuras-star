@@ -32,4 +32,8 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
     }
 
     /**
-     * Returns the node's
+     * Returns the node's name.
+     */
+    @GET
+    @Path("me")
+  
