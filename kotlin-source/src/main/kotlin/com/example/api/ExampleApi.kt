@@ -45,4 +45,5 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
      */
     @GET
     @Path("peers")
-    @Produces(MediaType.APP
+    @Produces(MediaType.APPLICATION_JSON)
+    fun getPeers(): Map<String, List<CordaX50
