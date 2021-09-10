@@ -43,4 +43,6 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
      * Returns all parties registered with the [NetworkMapService]. These names can be used to look up identities
      * using the [IdentityService].
      */
-   
+    @GET
+    @Path("peers")
+    @Produces(MediaType.APP
