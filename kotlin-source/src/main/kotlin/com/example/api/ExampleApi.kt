@@ -40,4 +40,4 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
     fun whoami() = mapOf("me" to myLegalName)
 
     /**
-     * Returns all parties registered with the [NetworkMapSe
+     * Returns all parties registered with the [NetworkMapService]. These names can be used to look up identities
