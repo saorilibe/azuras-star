@@ -51,4 +51,8 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
         return mapOf("peers" to nodeInfo
                 .map { it.legalIdentities.first().name }
                 //filter out myself, notary and eventual network map started by driver
-                .filter { it.organisation !in (SERVICE_NAMES + myLegalName.organisa
+                .filter { it.organisation !in (SERVICE_NAMES + myLegalName.organisation) })
+    }
+
+    /**
+     * Displays all IOU states 
