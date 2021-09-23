@@ -47,4 +47,5 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
     @Path("peers")
     @Produces(MediaType.APPLICATION_JSON)
     fun getPeers(): Map<String, List<CordaX500Name>> {
-        val nodeInfo = rpcOp
+        val nodeInfo = rpcOps.networkMapSnapshot()
+        return mapOf("peers" 
