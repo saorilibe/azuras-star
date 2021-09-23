@@ -50,4 +50,5 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
         val nodeInfo = rpcOps.networkMapSnapshot()
         return mapOf("peers" to nodeInfo
                 .map { it.legalIdentities.first().name }
-                //filter out myself, notary and eventual network map sta
+                //filter out myself, notary and eventual network map started by driver
+                .filter { it.
