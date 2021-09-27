@@ -55,4 +55,6 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
     }
 
     /**
-     * Displays all IOU states 
+     * Displays all IOU states that exist in the node's vault.
+     */
+    @GET
