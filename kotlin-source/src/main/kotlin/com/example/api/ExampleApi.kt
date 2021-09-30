@@ -59,4 +59,5 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
      */
     @GET
     @Path("ious")
-    @Produces(MediaType.APPLIC
+    @Produces(MediaType.APPLICATION_JSON)
+    fun getIOUs() = rpcOps.vaultQueryBy<IOUStat
