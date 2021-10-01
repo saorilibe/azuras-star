@@ -60,4 +60,7 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
     @GET
     @Path("ious")
     @Produces(MediaType.APPLICATION_JSON)
-    fun getIOUs() = rpcOps.vaultQueryBy<IOUStat
+    fun getIOUs() = rpcOps.vaultQueryBy<IOUState>().states
+
+    /**
+     * Initiates a flow to ag
