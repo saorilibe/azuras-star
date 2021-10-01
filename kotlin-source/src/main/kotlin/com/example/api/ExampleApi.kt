@@ -63,4 +63,6 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
     fun getIOUs() = rpcOps.vaultQueryBy<IOUState>().states
 
     /**
-     * Initiates a flow to ag
+     * Initiates a flow to agree an IOU between two parties.
+     *
+     * Once the
