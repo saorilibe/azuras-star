@@ -65,4 +65,4 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
     /**
      * Initiates a flow to agree an IOU between two parties.
      *
-     * Once the
+     * Once the flow finishes it will have written the IO
