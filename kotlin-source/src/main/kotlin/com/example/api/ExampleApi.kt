@@ -69,4 +69,4 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
      * see it when calling /api/example/ious on their respective nodes.
      *
      * This end-point takes a Party name parameter as part of the path. If the serving node can't find the other party
-    
+     * in its network map cache, it will return an HTT
