@@ -71,4 +71,7 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
      * This end-point takes a Party name parameter as part of the path. If the serving node can't find the other party
      * in its network map cache, it will return an HTTP bad request.
      *
-     * The flow is invoked asynchronously. It returns a future when the
+     * The flow is invoked asynchronously. It returns a future when the flow's call() method returns.
+     */
+    @PUT
+   
