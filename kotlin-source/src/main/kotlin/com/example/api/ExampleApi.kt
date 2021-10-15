@@ -68,4 +68,4 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
      * Once the flow finishes it will have written the IOU to ledger. Both the lender and the borrower will be able to
      * see it when calling /api/example/ious on their respective nodes.
      *
-     * This
+     * This end-point takes a Party name parameter as part of the pat
