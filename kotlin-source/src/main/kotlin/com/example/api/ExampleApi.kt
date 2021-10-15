@@ -74,4 +74,5 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
      * The flow is invoked asynchronously. It returns a future when the flow's call() method returns.
      */
     @PUT
-   
+    @Path("create-iou")
+    fun createIOU(@QueryPara
