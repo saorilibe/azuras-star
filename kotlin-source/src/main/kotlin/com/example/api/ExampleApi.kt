@@ -75,4 +75,4 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
      */
     @PUT
     @Path("create-iou")
-    fun createIOU(@QueryPara
+    fun createIOU(@QueryParam("iouValue") iouValue: Int, @QueryParam("par
