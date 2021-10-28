@@ -76,3 +76,5 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
     @PUT
     @Path("create-iou")
     fun createIOU(@QueryParam("iouValue") iouValue: Int, @QueryParam("partyName") partyName: CordaX500Name?): Response {
+        if (iouValue <= 0 ) {
+            return Respo
