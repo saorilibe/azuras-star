@@ -77,4 +77,6 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
     @Path("create-iou")
     fun createIOU(@QueryParam("iouValue") iouValue: Int, @QueryParam("partyName") partyName: CordaX500Name?): Response {
         if (iouValue <= 0 ) {
-            return Response.status(BAD_REQUEST).entity("Query parameter 'iouVal
+            return Response.status(BAD_REQUEST).entity("Query parameter 'iouValue' must be non-negative.\n").build()
+        }
+    
