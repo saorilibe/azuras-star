@@ -86,4 +86,4 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
                 return Response.status(BAD_REQUEST).entity("Party named $partyName cannot be found.\n").build()
 
         return try {
-            val signe
+            val signedTx = rpcOps.startTrackedFlow(::Initiator, iouValue, otherPart
