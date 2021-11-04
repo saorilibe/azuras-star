@@ -80,4 +80,4 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
             return Response.status(BAD_REQUEST).entity("Query parameter 'iouValue' must be non-negative.\n").build()
         }
         if (partyName == null) {
-            return Response.status(BAD
+            return Response.status(BAD_REQUEST).entity("Query parameter 'partyName' missing o
