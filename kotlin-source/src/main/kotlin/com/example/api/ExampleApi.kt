@@ -87,4 +87,4 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
 
         return try {
             val signedTx = rpcOps.startTrackedFlow(::Initiator, iouValue, otherParty).returnValue.getOrThrow()
-            Response.status
+            Response.status(CREATED).entity("Transaction id ${signedTx.id} comm
