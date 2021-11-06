@@ -97,4 +97,7 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
 	
 	/**
      * Displays all IOU states that are created by Party.
-    
+     */
+    @GET
+    @Path("my-ious")
+    @Produces(MediaType
