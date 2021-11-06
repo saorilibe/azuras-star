@@ -102,4 +102,5 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
     @Path("my-ious")
     @Produces(MediaType.APPLICATION_JSON)
     fun myious(): Response {
-        val generalCriteri
+        val generalCriteria = QueryCriteria.VaultQueryCriteria(Vault.StateStatus.ALL)
+        val r
