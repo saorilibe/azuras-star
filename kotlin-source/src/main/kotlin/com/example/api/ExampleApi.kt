@@ -103,4 +103,5 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
     @Produces(MediaType.APPLICATION_JSON)
     fun myious(): Response {
         val generalCriteria = QueryCriteria.VaultQueryCriteria(Vault.StateStatus.ALL)
-        val r
+        val results = builder {
+                var party
