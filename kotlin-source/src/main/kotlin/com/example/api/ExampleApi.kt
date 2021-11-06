@@ -100,4 +100,6 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
      */
     @GET
     @Path("my-ious")
-    @Produces(MediaType
+    @Produces(MediaType.APPLICATION_JSON)
+    fun myious(): Response {
+        val generalCriteri
