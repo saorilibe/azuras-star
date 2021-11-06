@@ -91,4 +91,4 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
 
         } catch (ex: Throwable) {
             logger.error(ex.message, ex)
-          
+            Response.status(BAD_REQUEST).entity(ex.message!!).b
