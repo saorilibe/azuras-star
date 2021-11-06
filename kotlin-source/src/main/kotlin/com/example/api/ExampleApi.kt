@@ -89,4 +89,6 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
             val signedTx = rpcOps.startTrackedFlow(::Initiator, iouValue, otherParty).returnValue.getOrThrow()
             Response.status(CREATED).entity("Transaction id ${signedTx.id} committed to ledger.\n").build()
 
-        } catch (ex: Throwabl
+        } catch (ex: Throwable) {
+            logger.error(ex.message, ex)
+          
