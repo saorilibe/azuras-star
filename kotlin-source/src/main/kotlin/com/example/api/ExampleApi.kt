@@ -106,4 +106,5 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
         val results = builder {
                 var partyType = IOUSchemaV1.PersistentIOU::lenderName.equal(rpcOps.nodeInfo().legalIdentities.first().name.toString())
                 val customCriteria = QueryCriteria.VaultCustomQueryCriteria(partyType)
-                val criteria = 
+                val criteria = generalCriteria.and(customCriteria)
+                v
