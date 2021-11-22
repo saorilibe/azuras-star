@@ -109,4 +109,6 @@ class ExampleApi(private val rpcOps: CordaRPCOps) {
                 val criteria = generalCriteria.and(customCriteria)
                 val results = rpcOps.vaultQueryBy<IOUState>(criteria).states
                 return Response.ok(results).build()
-      
+        }
+    }
+}
