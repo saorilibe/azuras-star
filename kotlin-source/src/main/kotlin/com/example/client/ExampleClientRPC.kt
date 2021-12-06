@@ -8,4 +8,5 @@ import net.corda.core.utilities.loggerFor
 import org.slf4j.Logger
 
 /**
- *  Demonstration of using th
+ *  Demonstration of using the CordaRPCClient to connect to a Corda Node and
+ *  steam some 
