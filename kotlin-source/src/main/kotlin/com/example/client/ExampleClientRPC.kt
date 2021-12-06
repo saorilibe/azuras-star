@@ -9,4 +9,7 @@ import org.slf4j.Logger
 
 /**
  *  Demonstration of using the CordaRPCClient to connect to a Corda Node and
- *  steam some 
+ *  steam some State data from the node.
+ **/
+
+fun main
