@@ -5,4 +5,7 @@ import net.corda.client.rpc.CordaRPCClient
 import net.corda.core.contracts.StateAndRef
 import net.corda.core.utilities.NetworkHostAndPort
 import net.corda.core.utilities.loggerFor
-import org.s
+import org.slf4j.Logger
+
+/**
+ *  Demonstration of using th
