@@ -12,4 +12,8 @@ import org.slf4j.Logger
  *  steam some State data from the node.
  **/
 
-fun main
+fun main(args: Array<String>) {
+    ExampleClientRPC().main(args)
+}
+
+priva
