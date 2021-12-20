@@ -16,4 +16,6 @@ fun main(args: Array<String>) {
     ExampleClientRPC().main(args)
 }
 
-priva
+private class ExampleClientRPC {
+    companion object {
+        
