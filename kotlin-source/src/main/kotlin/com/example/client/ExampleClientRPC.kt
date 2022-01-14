@@ -22,4 +22,5 @@ private class ExampleClientRPC {
         private fun logState(state: StateAndRef<IOUState>) = logger.info("{}", state.state.data)
     }
 
-    fun ma
+    fun main(args: Array<String>) {
+        require(args.size 
