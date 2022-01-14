@@ -19,4 +19,7 @@ fun main(args: Array<String>) {
 private class ExampleClientRPC {
     companion object {
         val logger: Logger = loggerFor<ExampleClientRPC>()
-        private fun logState(state: StateAn
+        private fun logState(state: StateAndRef<IOUState>) = logger.info("{}", state.state.data)
+    }
+
+    fun ma
