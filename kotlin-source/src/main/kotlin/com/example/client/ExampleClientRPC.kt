@@ -24,4 +24,7 @@ private class ExampleClientRPC {
 
     fun main(args: Array<String>) {
         require(args.size == 1) { "Usage: ExampleClientRPC <node address>" }
-        val nodeAddress = NetworkHostAndPort.parse(ar
+        val nodeAddress = NetworkHostAndPort.parse(args[0])
+        val client = CordaRPCClient(nodeAddress)
+
+        // Ca
