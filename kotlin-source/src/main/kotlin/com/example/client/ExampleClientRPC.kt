@@ -23,4 +23,5 @@ private class ExampleClientRPC {
     }
 
     fun main(args: Array<String>) {
-        require(args.size == 1) { "Usage: ExampleClientRPC <node address>" 
+        require(args.size == 1) { "Usage: ExampleClientRPC <node address>" }
+        val nodeAddress = NetworkHostAndPort.parse(ar
