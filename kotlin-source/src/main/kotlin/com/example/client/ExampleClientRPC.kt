@@ -23,4 +23,4 @@ private class ExampleClientRPC {
     }
 
     fun main(args: Array<String>) {
-        require(args.size 
+        require(args.size == 1) { "Usage: ExampleClientRPC <node address>" 
