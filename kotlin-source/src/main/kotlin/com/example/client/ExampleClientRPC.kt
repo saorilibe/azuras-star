@@ -28,4 +28,4 @@ private class ExampleClientRPC {
         val client = CordaRPCClient(nodeAddress)
 
         // Can be amended in the com.example.MainKt file.
-  
+        val proxy = client.start("user1", "test").proxy
