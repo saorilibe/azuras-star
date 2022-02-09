@@ -27,4 +27,5 @@ private class ExampleClientRPC {
         val nodeAddress = NetworkHostAndPort.parse(args[0])
         val client = CordaRPCClient(nodeAddress)
 
-        // Ca
+        // Can be amended in the com.example.MainKt file.
+  
