@@ -29,3 +29,6 @@ private class ExampleClientRPC {
 
         // Can be amended in the com.example.MainKt file.
         val proxy = client.start("user1", "test").proxy
+
+        // Grab all existing and future IOU states in the vault.
+      
