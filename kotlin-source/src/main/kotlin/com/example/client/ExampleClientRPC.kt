@@ -33,4 +33,5 @@ private class ExampleClientRPC {
         // Grab all existing and future IOU states in the vault.
         val (snapshot, updates) = proxy.vaultTrack(IOUState::class.java)
 
-        // Log 
+        // Log the 'placed' IOU states and listen for new ones.
+        snapshot.st
