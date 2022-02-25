@@ -31,4 +31,6 @@ private class ExampleClientRPC {
         val proxy = client.start("user1", "test").proxy
 
         // Grab all existing and future IOU states in the vault.
-        val (snapshot, updates) = proxy.vaultTrack
+        val (snapshot, updates) = proxy.vaultTrack(IOUState::class.java)
+
+        // Log 
