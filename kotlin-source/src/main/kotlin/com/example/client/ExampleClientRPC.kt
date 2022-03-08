@@ -37,4 +37,6 @@ private class ExampleClientRPC {
         snapshot.states.forEach { logState(it) }
         updates.toBlocking().subscribe { update ->
             update.produced.forEach { logState(it) }
-    
+        }
+    }
+}
