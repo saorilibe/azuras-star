@@ -35,4 +35,6 @@ private class ExampleClientRPC {
 
         // Log the 'placed' IOU states and listen for new ones.
         snapshot.states.forEach { logState(it) }
-        updates.toBlocking().subscribe { update 
+        updates.toBlocking().subscribe { update ->
+            update.produced.forEach { logState(it) }
+    
