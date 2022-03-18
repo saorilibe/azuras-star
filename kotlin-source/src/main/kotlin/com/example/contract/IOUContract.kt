@@ -1,3 +1,4 @@
 package com.example.contract
 
-impo
+import com.example.state.IOUState
+import net.corda.core.contr
