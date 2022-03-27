@@ -8,4 +8,6 @@ import net.corda.core.contracts.requireThat
 import net.corda.core.transactions.LedgerTransaction
 
 /**
- * A implementation of a basic smart contract
+ * A implementation of a basic smart contract in Corda.
+ *
+ * This contract enforces rules regarding
