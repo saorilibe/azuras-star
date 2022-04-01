@@ -10,4 +10,4 @@ import net.corda.core.transactions.LedgerTransaction
 /**
  * A implementation of a basic smart contract in Corda.
  *
- * This contract enforces rules regarding
+ * This contract enforces rules regarding the creation of a valid [IOUState], which in turn encapsul
