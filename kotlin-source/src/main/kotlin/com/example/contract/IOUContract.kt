@@ -12,4 +12,4 @@ import net.corda.core.transactions.LedgerTransaction
  *
  * This contract enforces rules regarding the creation of a valid [IOUState], which in turn encapsulates an [IOU].
  *
- * For a new [IOU] to be issued onto
+ * For a new [IOU] to be issued onto the ledger, a transaction is required which take
