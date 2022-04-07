@@ -14,4 +14,5 @@ import net.corda.core.transactions.LedgerTransaction
  *
  * For a new [IOU] to be issued onto the ledger, a transaction is required which takes:
  * - Zero input states.
- * - One output state: the new [IOU
+ * - One output state: the new [IOU].
+ * - An Create() command with the public keys of 
