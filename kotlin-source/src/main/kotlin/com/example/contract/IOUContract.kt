@@ -18,4 +18,7 @@ import net.corda.core.transactions.LedgerTransaction
  * - An Create() command with the public keys of both the lender and the borrower.
  *
  * All contracts must sub-class the [Contract] interface.
- 
+ */
+class IOUContract : Contract {
+    companion object {
+        @JvmS
