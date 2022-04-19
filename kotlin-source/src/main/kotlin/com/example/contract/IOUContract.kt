@@ -17,4 +17,5 @@ import net.corda.core.transactions.LedgerTransaction
  * - One output state: the new [IOU].
  * - An Create() command with the public keys of both the lender and the borrower.
  *
- * All con
+ * All contracts must sub-class the [Contract] interface.
+ 
