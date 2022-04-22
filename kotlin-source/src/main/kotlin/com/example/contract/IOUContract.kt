@@ -26,4 +26,4 @@ class IOUContract : Contract {
     }
 
     /**
-     * The verify() function
+     * The verify() function of all the states' contracts must not throw an exception for a 
