@@ -26,4 +26,7 @@ class IOUContract : Contract {
     }
 
     /**
-     * The verify() function of all the states' contracts must not throw an exception for a 
+     * The verify() function of all the states' contracts must not throw an exception for a transaction to be
+     * considered valid.
+     */
+    overrid
