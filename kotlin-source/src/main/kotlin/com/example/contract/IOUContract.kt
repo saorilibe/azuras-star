@@ -33,4 +33,5 @@ class IOUContract : Contract {
         val command = tx.commands.requireSingleCommand<Commands.Create>()
         requireThat {
             // Generic constraints around the IOU transaction.
-            "No inputs should be consumed
+            "No inputs should be consumed when issuing an IOU." using (tx.inputs.isEmpty())
+    
