@@ -32,4 +32,5 @@ class IOUContract : Contract {
     override fun verify(tx: LedgerTransaction) {
         val command = tx.commands.requireSingleCommand<Commands.Create>()
         requireThat {
-            // Generic constraints around t
+            // Generic constraints around the IOU transaction.
+            "No inputs should be consumed
