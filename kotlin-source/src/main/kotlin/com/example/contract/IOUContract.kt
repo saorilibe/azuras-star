@@ -34,4 +34,6 @@ class IOUContract : Contract {
         requireThat {
             // Generic constraints around the IOU transaction.
             "No inputs should be consumed when issuing an IOU." using (tx.inputs.isEmpty())
-            "Only one output state should be created." using (tx.outputs.
+            "Only one output state should be created." using (tx.outputs.size == 1)
+            val out = tx.outputsOfType<IOUState>().single()
+    
