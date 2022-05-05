@@ -37,4 +37,4 @@ class IOUContract : Contract {
             "Only one output state should be created." using (tx.outputs.size == 1)
             val out = tx.outputsOfType<IOUState>().single()
             "The lender and the borrower cannot be the same entity." using (out.lender != out.borrower)
-            "All o
+            "All of the participants must be signers." using (co
