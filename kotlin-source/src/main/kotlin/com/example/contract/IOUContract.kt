@@ -36,4 +36,5 @@ class IOUContract : Contract {
             "No inputs should be consumed when issuing an IOU." using (tx.inputs.isEmpty())
             "Only one output state should be created." using (tx.outputs.size == 1)
             val out = tx.outputsOfType<IOUState>().single()
-            "The lender and the borrower cannot be the same entity.
+            "The lender and the borrower cannot be the same entity." using (out.lender != out.borrower)
+            "All o
