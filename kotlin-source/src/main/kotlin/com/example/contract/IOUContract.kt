@@ -45,4 +45,5 @@ class IOUContract : Contract {
     }
 
     /**
-     * This con
+     * This contract only implements one command, Create.
+     */
