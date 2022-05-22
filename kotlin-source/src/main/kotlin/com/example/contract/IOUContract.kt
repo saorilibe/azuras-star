@@ -48,4 +48,6 @@ class IOUContract : Contract {
      * This contract only implements one command, Create.
      */
     interface Commands : CommandData {
- 
+        class Create : Commands
+    }
+}
