@@ -6,4 +6,6 @@ import com.example.contract.IOUContract.Companion.IOU_CONTRACT_ID
 import com.example.flow.ExampleFlow.Acceptor
 import com.example.flow.ExampleFlow.Initiator
 import com.example.state.IOUState
-import net.corda.co
+import net.corda.core.contracts.Command
+import net.corda.core.contracts.requireThat
+imp
