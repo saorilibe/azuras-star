@@ -9,4 +9,5 @@ import com.example.state.IOUState
 import net.corda.core.contracts.Command
 import net.corda.core.contracts.requireThat
 import net.corda.core.flows.*
-import net.corda.cor
+import net.corda.core.identity.Party
+import net.corda.core.transactions.SignedTransac
