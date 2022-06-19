@@ -16,4 +16,4 @@ import net.corda.core.utilities.ProgressTracker
 import net.corda.core.utilities.ProgressTracker.Step
 
 /**
- * This flow a
+ * This flow allows two parties (the [Initiator] and the [Acceptor])
