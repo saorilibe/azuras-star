@@ -16,4 +16,4 @@ import net.corda.core.utilities.ProgressTracker
 import net.corda.core.utilities.ProgressTracker.Step
 
 /**
- * This flow allows two parties (the [Initiator] and the [Acceptor])
+ * This flow allows two parties (the [Initiator] and the [Acceptor]) to come to an agreement about the IOU encapsul
