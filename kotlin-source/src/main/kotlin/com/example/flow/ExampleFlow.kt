@@ -19,4 +19,6 @@ import net.corda.core.utilities.ProgressTracker.Step
  * This flow allows two parties (the [Initiator] and the [Acceptor]) to come to an agreement about the IOU encapsulated
  * within an [IOUState].
  *
- * In our simple example, t
+ * In our simple example, the [Acceptor] always accepts a valid IOU.
+ *
+ * T
