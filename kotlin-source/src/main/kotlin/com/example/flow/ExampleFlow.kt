@@ -22,4 +22,6 @@ import net.corda.core.utilities.ProgressTracker.Step
  * In our simple example, the [Acceptor] always accepts a valid IOU.
  *
  * These flows have deliberately been implemented by using only the call() method for ease of understanding. In
- * practice we would recommend splitting up the various sta
+ * practice we would recommend splitting up the various stages of the flow into sub-routines.
+ *
+ * All methods called wit
