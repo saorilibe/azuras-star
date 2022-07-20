@@ -24,4 +24,7 @@ import net.corda.core.utilities.ProgressTracker.Step
  * These flows have deliberately been implemented by using only the call() method for ease of understanding. In
  * practice we would recommend splitting up the various stages of the flow into sub-routines.
  *
- * All methods called within the [FlowLogic] sub-class need to be annotated with the @
+ * All methods called within the [FlowLogic] sub-class need to be annotated with the @Suspendable annotation.
+ */
+object ExampleFlow {
+    @I
