@@ -30,4 +30,5 @@ object ExampleFlow {
     @InitiatingFlow
     @StartableByRPC
     class Initiator(val iouValue: Int,
-                    val otherParty: Par
+                    val otherParty: Party) : FlowLogic<SignedTransaction>() {
+        /
