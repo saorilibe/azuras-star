@@ -29,4 +29,5 @@ import net.corda.core.utilities.ProgressTracker.Step
 object ExampleFlow {
     @InitiatingFlow
     @StartableByRPC
-    class Initiator(val iouVal
+    class Initiator(val iouValue: Int,
+                    val otherParty: Par
