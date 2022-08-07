@@ -31,4 +31,5 @@ object ExampleFlow {
     @StartableByRPC
     class Initiator(val iouValue: Int,
                     val otherParty: Party) : FlowLogic<SignedTransaction>() {
-        /
+        /**
+         * The progress tracker checkpoints each sta
