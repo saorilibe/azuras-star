@@ -32,4 +32,5 @@ object ExampleFlow {
     class Initiator(val iouValue: Int,
                     val otherParty: Party) : FlowLogic<SignedTransaction>() {
         /**
-         * The progress tracker checkpoints each stage of the flow and outputs the specified messages when eac
+         * The progress tracker checkpoints each stage of the flow and outputs the specified messages when each
+         * checkpoint is reached in the code. See the 'p
