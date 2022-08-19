@@ -36,4 +36,4 @@ object ExampleFlow {
          * checkpoint is reached in the code. See the 'progressTracker.currentStep' expressions within the call() function.
          */
         companion object {
-            o
+            object GENERATING_TRANSACTION : Step("Generating transaction 
