@@ -37,4 +37,5 @@ object ExampleFlow {
          */
         companion object {
             object GENERATING_TRANSACTION : Step("Generating transaction based on new IOU.")
-            object VERIFYING_TRANSACTION :
+            object VERIFYING_TRANSACTION : Step("Verifying contract constraints.")
+      
