@@ -39,4 +39,4 @@ object ExampleFlow {
             object GENERATING_TRANSACTION : Step("Generating transaction based on new IOU.")
             object VERIFYING_TRANSACTION : Step("Verifying contract constraints.")
             object SIGNING_TRANSACTION : Step("Signing transaction with our private key.")
-            object GATHERING
+            object GATHERING_SIGS : Step("Gathering the counterparty's signatur
