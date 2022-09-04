@@ -40,4 +40,7 @@ object ExampleFlow {
             object VERIFYING_TRANSACTION : Step("Verifying contract constraints.")
             object SIGNING_TRANSACTION : Step("Signing transaction with our private key.")
             object GATHERING_SIGS : Step("Gathering the counterparty's signature.") {
-                override fun childProgressTrack
+                override fun childProgressTracker() = CollectSignaturesFlow.tracker()
+            }
+
+ 
