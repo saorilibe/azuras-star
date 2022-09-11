@@ -44,4 +44,7 @@ object ExampleFlow {
             }
 
             object FINALISING_TRANSACTION : Step("Obtaining notary signature and recording transaction.") {
-                override fun childProgressTracker() =
+                override fun childProgressTracker() = FinalityFlow.tracker()
+            }
+
+            fun tr
