@@ -47,4 +47,5 @@ object ExampleFlow {
                 override fun childProgressTracker() = FinalityFlow.tracker()
             }
 
-            fun tr
+            fun tracker() = ProgressTracker(
+                    GEN
