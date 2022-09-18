@@ -48,4 +48,6 @@ object ExampleFlow {
             }
 
             fun tracker() = ProgressTracker(
-                    GEN
+                    GENERATING_TRANSACTION,
+                    VERIFYING_TRANSACTION,
+  
