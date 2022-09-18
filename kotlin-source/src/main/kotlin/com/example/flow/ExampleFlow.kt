@@ -52,4 +52,8 @@ object ExampleFlow {
                     VERIFYING_TRANSACTION,
                     SIGNING_TRANSACTION,
                     GATHERING_SIGS,
-                    FINALISING_TRANSACTI
+                    FINALISING_TRANSACTION
+            )
+        }
+
+        override val progress
