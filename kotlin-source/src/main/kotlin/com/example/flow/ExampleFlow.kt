@@ -50,4 +50,5 @@ object ExampleFlow {
             fun tracker() = ProgressTracker(
                     GENERATING_TRANSACTION,
                     VERIFYING_TRANSACTION,
-  
+                    SIGNING_TRANSACTION,
+          
