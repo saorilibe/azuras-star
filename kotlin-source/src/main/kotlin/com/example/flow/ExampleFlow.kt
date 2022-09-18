@@ -51,4 +51,5 @@ object ExampleFlow {
                     GENERATING_TRANSACTION,
                     VERIFYING_TRANSACTION,
                     SIGNING_TRANSACTION,
-          
+                    GATHERING_SIGS,
+                    FINALISING_TRANSACTI
