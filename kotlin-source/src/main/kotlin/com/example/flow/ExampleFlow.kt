@@ -59,4 +59,5 @@ object ExampleFlow {
         override val progressTracker = tracker()
 
         /**
-         * The flow l
+         * The flow logic is encapsulated within the call() method.
+         */
