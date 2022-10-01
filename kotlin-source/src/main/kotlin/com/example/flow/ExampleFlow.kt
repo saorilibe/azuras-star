@@ -63,4 +63,5 @@ object ExampleFlow {
          */
         @Suspendable
         override fun call(): SignedTransaction {
-            // Obtain a reference to t
+            // Obtain a reference to the notary we want to use.
+            val notary =
