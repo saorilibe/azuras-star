@@ -68,4 +68,5 @@ object ExampleFlow {
 
             // Stage 1.
             progressTracker.currentStep = GENERATING_TRANSACTION
-            // Gene
+            // Generate an unsigned transaction.
+            val iouSta
