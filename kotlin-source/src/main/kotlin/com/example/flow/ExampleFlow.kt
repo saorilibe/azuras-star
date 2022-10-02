@@ -67,4 +67,5 @@ object ExampleFlow {
             val notary = serviceHub.networkMapCache.notaryIdentities[0]
 
             // Stage 1.
-            progressTracker.curre
+            progressTracker.currentStep = GENERATING_TRANSACTION
+            // Gene
