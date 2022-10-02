@@ -66,4 +66,5 @@ object ExampleFlow {
             // Obtain a reference to the notary we want to use.
             val notary = serviceHub.networkMapCache.notaryIdentities[0]
 
-       
+            // Stage 1.
+            progressTracker.curre
