@@ -69,4 +69,4 @@ object ExampleFlow {
             // Stage 1.
             progressTracker.currentStep = GENERATING_TRANSACTION
             // Generate an unsigned transaction.
-            val iouSta
+            val iouState = IOUState(iouValue, serviceHub.myInfo.legalIdenti
