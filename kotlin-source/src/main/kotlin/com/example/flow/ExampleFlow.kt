@@ -70,4 +70,5 @@ object ExampleFlow {
             progressTracker.currentStep = GENERATING_TRANSACTION
             // Generate an unsigned transaction.
             val iouState = IOUState(iouValue, serviceHub.myInfo.legalIdentities.first(), otherParty)
-            val txCommand = Command(IOUContract.Commands.Create(), iouState.parti
+            val txCommand = Command(IOUContract.Commands.Create(), iouState.participants.map { it.owningKey })
+            val txBuilder 
