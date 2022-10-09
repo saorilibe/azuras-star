@@ -71,4 +71,5 @@ object ExampleFlow {
             // Generate an unsigned transaction.
             val iouState = IOUState(iouValue, serviceHub.myInfo.legalIdentities.first(), otherParty)
             val txCommand = Command(IOUContract.Commands.Create(), iouState.participants.map { it.owningKey })
-            val txBuilder 
+            val txBuilder = TransactionBuilder(notary)
+                    .addOutputStat
