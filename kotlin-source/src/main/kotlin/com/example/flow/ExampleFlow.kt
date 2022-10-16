@@ -72,4 +72,5 @@ object ExampleFlow {
             val iouState = IOUState(iouValue, serviceHub.myInfo.legalIdentities.first(), otherParty)
             val txCommand = Command(IOUContract.Commands.Create(), iouState.participants.map { it.owningKey })
             val txBuilder = TransactionBuilder(notary)
-                    .addOutputStat
+                    .addOutputState(iouState, IOU_CONTRACT_ID)
+                    .a
