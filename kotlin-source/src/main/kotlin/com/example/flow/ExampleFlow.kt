@@ -76,4 +76,5 @@ object ExampleFlow {
                     .addCommand(txCommand)
 
             // Stage 2.
-            progressTracker.currentStep = VERIFYING_T
+            progressTracker.currentStep = VERIFYING_TRANSACTION
+            // Verify that the transaction is valid.
