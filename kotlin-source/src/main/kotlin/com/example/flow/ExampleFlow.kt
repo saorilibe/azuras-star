@@ -73,4 +73,6 @@ object ExampleFlow {
             val txCommand = Command(IOUContract.Commands.Create(), iouState.participants.map { it.owningKey })
             val txBuilder = TransactionBuilder(notary)
                     .addOutputState(iouState, IOU_CONTRACT_ID)
-                    .a
+                    .addCommand(txCommand)
+
+            // Stage 2.
