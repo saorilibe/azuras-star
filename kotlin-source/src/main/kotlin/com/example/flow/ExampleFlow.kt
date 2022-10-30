@@ -81,4 +81,5 @@ object ExampleFlow {
             txBuilder.verify(serviceHub)
 
             // Stage 3.
-            progressTracker.currentStep 
+            progressTracker.currentStep = SIGNING_TRANSACTION
+            // Sign the transacti
