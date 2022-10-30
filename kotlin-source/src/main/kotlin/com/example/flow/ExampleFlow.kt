@@ -82,4 +82,5 @@ object ExampleFlow {
 
             // Stage 3.
             progressTracker.currentStep = SIGNING_TRANSACTION
-            // Sign the transacti
+            // Sign the transaction.
+            val partSignedTx = serviceHub.signIniti
