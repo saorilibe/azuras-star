@@ -80,4 +80,5 @@ object ExampleFlow {
             // Verify that the transaction is valid.
             txBuilder.verify(serviceHub)
 
-       
+            // Stage 3.
+            progressTracker.currentStep 
