@@ -89,4 +89,4 @@ object ExampleFlow {
             progressTracker.currentStep = GATHERING_SIGS
             // Send the state to the counterparty, and receive it back with their signature.
             val otherPartyFlow = initiateFlow(otherParty)
-  
+            val fullySignedTx = subFlow(CollectSignaturesF
