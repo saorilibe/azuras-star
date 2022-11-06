@@ -86,4 +86,5 @@ object ExampleFlow {
             val partSignedTx = serviceHub.signInitialTransaction(txBuilder)
 
             // Stage 4.
-            progressTracker.currentStep = GATHERING_SI
+            progressTracker.currentStep = GATHERING_SIGS
+            // Send the state to the counterpa
