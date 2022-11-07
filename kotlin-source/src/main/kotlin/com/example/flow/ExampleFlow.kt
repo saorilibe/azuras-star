@@ -99,4 +99,4 @@ object ExampleFlow {
     }
 
     @InitiatedBy(Initiator::class)
-    class Acceptor(val otherPartyF
+    class Acceptor(val otherPartyFlow: FlowSession) : FlowLogic<SignedTransaction>
