@@ -94,4 +94,4 @@ object ExampleFlow {
             // Stage 5.
             progressTracker.currentStep = FINALISING_TRANSACTION
             // Notarise and record the transaction in both parties' vaults.
-            return subFlow
+            return subFlow(FinalityFlow(fullySignedTx, FINALISING_TRANSACTION.chi
