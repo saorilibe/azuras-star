@@ -98,4 +98,5 @@ object ExampleFlow {
         }
     }
 
-    @Initia
+    @InitiatedBy(Initiator::class)
+    class Acceptor(val otherPartyF
