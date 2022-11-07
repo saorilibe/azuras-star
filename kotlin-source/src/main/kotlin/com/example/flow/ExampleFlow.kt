@@ -101,4 +101,5 @@ object ExampleFlow {
     @InitiatedBy(Initiator::class)
     class Acceptor(val otherPartyFlow: FlowSession) : FlowLogic<SignedTransaction>() {
         @Suspendable
-        overri
+        override fun call(): SignedTransaction {
+            val signTrans
