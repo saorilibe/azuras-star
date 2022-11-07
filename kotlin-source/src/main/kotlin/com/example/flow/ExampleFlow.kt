@@ -92,4 +92,5 @@ object ExampleFlow {
             val fullySignedTx = subFlow(CollectSignaturesFlow(partSignedTx, setOf(otherPartyFlow), GATHERING_SIGS.childProgressTracker()))
 
             // Stage 5.
-            progressTracker.currentStep = FINALISING_TRANSACT
+            progressTracker.currentStep = FINALISING_TRANSACTION
+            // Notarise and record the transaction in b
