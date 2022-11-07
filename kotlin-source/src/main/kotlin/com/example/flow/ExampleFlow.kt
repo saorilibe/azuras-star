@@ -99,4 +99,6 @@ object ExampleFlow {
     }
 
     @InitiatedBy(Initiator::class)
-    class Acceptor(val otherPartyFlow: FlowSession) : FlowLogic<SignedTransaction>
+    class Acceptor(val otherPartyFlow: FlowSession) : FlowLogic<SignedTransaction>() {
+        @Suspendable
+        overri
