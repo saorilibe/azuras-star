@@ -103,4 +103,5 @@ object ExampleFlow {
         @Suspendable
         override fun call(): SignedTransaction {
             val signTransactionFlow = object : SignTransactionFlow(otherPartyFlow) {
-                override fun checkTransaction(
+                override fun checkTransaction(stx: SignedTransaction) = requireThat {
+           
