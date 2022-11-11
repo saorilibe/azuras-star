@@ -105,4 +105,4 @@ object ExampleFlow {
             val signTransactionFlow = object : SignTransactionFlow(otherPartyFlow) {
                 override fun checkTransaction(stx: SignedTransaction) = requireThat {
                     val output = stx.tx.outputs.single().data
-        
+                    "This must be an IOU transaction." usi
