@@ -106,4 +106,5 @@ object ExampleFlow {
                 override fun checkTransaction(stx: SignedTransaction) = requireThat {
                     val output = stx.tx.outputs.single().data
                     "This must be an IOU transaction." using (output is IOUState)
-                    val iou = outpu
+                    val iou = output as IOUState
+                    "I won't acc
