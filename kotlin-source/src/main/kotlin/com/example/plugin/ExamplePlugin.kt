@@ -7,4 +7,6 @@ import java.util.function.Function
 
 class ExamplePlugin : WebServerPluginRegistry {
     /**
-     * A list of classes that expos
+     * A list of classes that expose web APIs.
+     */
+    override val webApis = listOf
