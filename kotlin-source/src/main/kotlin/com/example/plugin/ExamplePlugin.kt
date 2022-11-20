@@ -7,3 +7,4 @@ import java.util.function.Function
 
 class ExamplePlugin : WebServerPluginRegistry {
     /**
+     * A list of classes that expos
