@@ -12,4 +12,6 @@ class ExamplePlugin : WebServerPluginRegistry {
     override val webApis = listOf(Function(::ExampleApi))
 
     /**
-     * A list of directories in the resources directory that will be 
+     * A list of directories in the resources directory that will be served by Jetty under /web.
+     */
+    override v
