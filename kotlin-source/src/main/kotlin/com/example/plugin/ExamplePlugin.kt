@@ -12,4 +12,4 @@ class ExamplePlugin : WebServerPluginRegistry {
     override val webApis = listOf(Function(::ExampleApi))
 
     /**
-     * A lis
+     * A list of directories in the resources directory that will be 
