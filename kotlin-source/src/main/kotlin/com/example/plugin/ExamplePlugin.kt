@@ -16,4 +16,6 @@ class ExamplePlugin : WebServerPluginRegistry {
      */
     override val staticServeDirs = mapOf(
             // This will serve the exampleWeb directory in resources to /web/example
-            "example" to javaClass.classLoader.g
+            "example" to javaClass.classLoader.getResource("exampleWeb").toExternalForm()
+    )
+}
