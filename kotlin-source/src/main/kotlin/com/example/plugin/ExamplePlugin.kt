@@ -9,4 +9,7 @@ class ExamplePlugin : WebServerPluginRegistry {
     /**
      * A list of classes that expose web APIs.
      */
-    override val webApis = listOf
+    override val webApis = listOf(Function(::ExampleApi))
+
+    /**
+     * A lis
