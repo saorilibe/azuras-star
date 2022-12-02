@@ -8,4 +8,6 @@ import javax.persistence.Entity
 import javax.persistence.Table
 
 /**
- * The family of 
+ * The family of schemas for IOUState.
+ */
+object IOUSchema
