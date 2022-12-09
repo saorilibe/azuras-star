@@ -11,3 +11,8 @@ import javax.persistence.Table
  * The family of schemas for IOUState.
  */
 object IOUSchema
+
+/**
+ * An IOUState schema.
+ */
+object IOUSchemaV1 : Mapp
