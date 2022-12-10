@@ -15,4 +15,5 @@ object IOUSchema
 /**
  * An IOUState schema.
  */
-object IOUSchemaV1 : Mapp
+object IOUSchemaV1 : MappedSchema(
+        schemaFamily = IOUSchema.javaClass
