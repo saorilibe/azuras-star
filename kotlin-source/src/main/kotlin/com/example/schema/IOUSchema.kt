@@ -16,4 +16,6 @@ object IOUSchema
  * An IOUState schema.
  */
 object IOUSchemaV1 : MappedSchema(
-        schemaFamily = IOUSchema.javaClass
+        schemaFamily = IOUSchema.javaClass,
+        version = 1,
+        mappedTypes = listOf(Pe
