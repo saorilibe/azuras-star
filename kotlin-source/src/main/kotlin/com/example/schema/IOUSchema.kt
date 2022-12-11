@@ -22,4 +22,5 @@ object IOUSchemaV1 : MappedSchema(
     @Entity
     @Table(name = "iou_states")
     class PersistentIOU(
-            @Colu
+            @Column(name = "lender")
+            var lenderName: St
