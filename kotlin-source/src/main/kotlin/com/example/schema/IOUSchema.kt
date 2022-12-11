@@ -20,4 +20,6 @@ object IOUSchemaV1 : MappedSchema(
         version = 1,
         mappedTypes = listOf(PersistentIOU::class.java)) {
     @Entity
-    @Table(name = "
+    @Table(name = "iou_states")
+    class PersistentIOU(
+            @Colu
