@@ -18,4 +18,6 @@ object IOUSchema
 object IOUSchemaV1 : MappedSchema(
         schemaFamily = IOUSchema.javaClass,
         version = 1,
-        mappedTypes = listOf(Pe
+        mappedTypes = listOf(PersistentIOU::class.java)) {
+    @Entity
+    @Table(name = "
