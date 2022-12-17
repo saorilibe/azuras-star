@@ -26,4 +26,6 @@ object IOUSchemaV1 : MappedSchema(
             var lenderName: String,
 
             @Column(name = "borrower")
-  
+            var borrowerName: String,
+
+         
