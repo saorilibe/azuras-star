@@ -31,4 +31,5 @@ object IOUSchemaV1 : MappedSchema(
             @Column(name = "value")
             var value: Int,
 
-    
+            @Column(name = "linear_id")
+            va
