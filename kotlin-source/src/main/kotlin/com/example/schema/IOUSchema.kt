@@ -32,4 +32,6 @@ object IOUSchemaV1 : MappedSchema(
             var value: Int,
 
             @Column(name = "linear_id")
-            va
+            var linearId: UUID
+    ) : PersistentState() {
+    
