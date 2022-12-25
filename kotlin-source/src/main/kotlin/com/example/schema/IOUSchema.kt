@@ -34,4 +34,5 @@ object IOUSchemaV1 : MappedSchema(
             @Column(name = "linear_id")
             var linearId: UUID
     ) : PersistentState() {
-        // Default constructor required by h
+        // Default constructor required by hibernate.
+        constructor(): this("", "", 0, UUID.ra
