@@ -6,4 +6,5 @@ import net.corda.core.contracts.LinearState
 import net.corda.core.contracts.UniqueIdentifier
 import net.corda.core.identity.AbstractParty
 import net.corda.core.identity.Party
-impor
+import net.corda.core.schemas.MappedSchema
+import net.c
