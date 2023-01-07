@@ -11,4 +11,6 @@ import net.corda.core.schemas.PersistentState
 import net.corda.core.schemas.QueryableState
 
 /**
- * The state object recording 
+ * The state object recording IOU agreements between two parties.
+ *
+ * A state
