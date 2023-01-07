@@ -8,4 +8,7 @@ import net.corda.core.identity.AbstractParty
 import net.corda.core.identity.Party
 import net.corda.core.schemas.MappedSchema
 import net.corda.core.schemas.PersistentState
-import net.corda.core.
+import net.corda.core.schemas.QueryableState
+
+/**
+ * The state object recording 
