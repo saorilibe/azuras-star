@@ -13,4 +13,4 @@ import net.corda.core.schemas.QueryableState
 /**
  * The state object recording IOU agreements between two parties.
  *
- * A state
+ * A state must implement [ContractState] or one of its desce
