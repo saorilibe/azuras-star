@@ -16,4 +16,5 @@ import net.corda.core.schemas.QueryableState
  * A state must implement [ContractState] or one of its descendants.
  *
  * @param value the value of the IOU.
- * @param le
+ * @param lender the party issuing the IOU.
+ * @param borrower the
