@@ -17,4 +17,6 @@ import net.corda.core.schemas.QueryableState
  *
  * @param value the value of the IOU.
  * @param lender the party issuing the IOU.
- * @param borrower the
+ * @param borrower the party receiving and approving the IOU.
+ */
+dat
