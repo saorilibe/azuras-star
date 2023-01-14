@@ -20,4 +20,6 @@ import net.corda.core.schemas.QueryableState
  * @param borrower the party receiving and approving the IOU.
  */
 data class IOUState(val value: Int,
-                    val l
+                    val lender: Party,
+                    val borrower: Party,
+  
