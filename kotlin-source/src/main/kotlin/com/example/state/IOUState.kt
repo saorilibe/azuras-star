@@ -22,4 +22,5 @@ import net.corda.core.schemas.QueryableState
 data class IOUState(val value: Int,
                     val lender: Party,
                     val borrower: Party,
-                    override val linearId: UniqueIdentifier = Un
+                    override val linearId: UniqueIdentifier = UniqueIdentifier()):
+        LinearState, QueryableState {
