@@ -25,4 +25,4 @@ data class IOUState(val value: Int,
                     override val linearId: UniqueIdentifier = UniqueIdentifier()):
         LinearState, QueryableState {
     /** The public keys of the involved parties. */
-  
+    override val participants: List<AbstractParty> get() =
