@@ -27,4 +27,4 @@ data class IOUState(val value: Int,
     /** The public keys of the involved parties. */
     override val participants: List<AbstractParty> get() = listOf(lender, borrower)
 
-    override fun gene
+    override fun generateMappedObject(schema: MappedSchema): PersistentSt
