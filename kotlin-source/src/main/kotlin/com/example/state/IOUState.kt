@@ -24,3 +24,5 @@ data class IOUState(val value: Int,
                     val borrower: Party,
                     override val linearId: UniqueIdentifier = UniqueIdentifier()):
         LinearState, QueryableState {
+    /** The public keys of the involved parties. */
+  
