@@ -30,4 +30,5 @@ data class IOUState(val value: Int,
     override fun generateMappedObject(schema: MappedSchema): PersistentState {
         return when (schema) {
             is IOUSchemaV1 -> IOUSchemaV1.PersistentIOU(
-                 
+                    this.lender.name.toString(),
+                   
