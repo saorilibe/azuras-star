@@ -31,4 +31,6 @@ data class IOUState(val value: Int,
         return when (schema) {
             is IOUSchemaV1 -> IOUSchemaV1.PersistentIOU(
                     this.lender.name.toString(),
-                   
+                    this.borrower.name.toString(),
+                    this.value,
+      
