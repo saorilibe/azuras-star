@@ -33,4 +33,6 @@ data class IOUState(val value: Int,
                     this.lender.name.toString(),
                     this.borrower.name.toString(),
                     this.value,
-      
+                    this.linearId.id
+            )
+            else ->
