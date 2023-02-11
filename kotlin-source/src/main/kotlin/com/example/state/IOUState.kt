@@ -35,4 +35,4 @@ data class IOUState(val value: Int,
                     this.value,
                     this.linearId.id
             )
-            else ->
+            else -> throw IllegalArgumentException("Unrecognised schema
