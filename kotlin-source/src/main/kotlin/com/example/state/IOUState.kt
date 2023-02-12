@@ -35,4 +35,8 @@ data class IOUState(val value: Int,
                     this.value,
                     this.linearId.id
             )
-            else -> throw IllegalArgumentException("Unrecognised schema
+            else -> throw IllegalArgumentException("Unrecognised schema $schema")
+        }
+    }
+
+    override fun suppor
