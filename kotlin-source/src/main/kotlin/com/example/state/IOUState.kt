@@ -39,4 +39,5 @@ data class IOUState(val value: Int,
         }
     }
 
-    override fun supportedSchemas(): Iterable<MappedSchema> = listOf(IOUSc
+    override fun supportedSchemas(): Iterable<MappedSchema> = listOf(IOUSchemaV1)
+}
