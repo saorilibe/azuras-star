@@ -1,1 +1,2 @@
-# Register a ServiceLoader service extending from net.c
+# Register a ServiceLoader service extending from net.corda.webserver.services.WebServerPluginRegistry
+com.ex
