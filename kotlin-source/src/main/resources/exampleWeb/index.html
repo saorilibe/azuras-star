@@ -71,3 +71,53 @@ COMING WEEKS WE'LL WRITE A TUTORIAL ON HOW BEST TO DO THIS.
 </script>
 <script type="text/ng-template" id="messageContent.html">
     <div class="modal-body" id="modal-body">
+        {{ modalInstanceTwo.message }}
+    </div>
+</script>
+
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="panel-group" id="accordion">
+            <div class="panel">
+                <div class="panel-primary">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            Recorded IOUs:
+                        </h4>
+                    </div>
+                </div>
+                <div>
+                    <div ng-show="!demoApp.ious.length" class="panel-body">Use the "Create IOU" button to send an IOU to a peer.</div>
+                    <div ng-repeat="iou in demoApp.ious" class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Lender: {{iou.lender}}</li>
+                                <li>Borrower: {{iou.borrower}}</li>
+                                <li>Value: {{iou.value}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-primary">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            My IOUs:
+                        </h4>
+                    </div>
+                </div>
+                <div>
+                    <div ng-repeat="iou in demoApp.myious" class="panel panel-default">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Lender: {{iou.lender}}</li>
+                                <li>Borrower: {{iou.borrower}}</li>
+                                <li>Value: {{iou.value}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
