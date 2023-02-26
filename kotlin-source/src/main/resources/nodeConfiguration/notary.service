@@ -1,2 +1,6 @@
 [Unit]
-Description=Corda Node - Nota
+Description=Corda Node - Notary
+Requires=network.target
+
+[Service]
+Type=simple
