@@ -95,3 +95,30 @@ app.controller('ModalInstanceCtrl', function ($http, $location, $uibModalInstanc
             );
         }
     };
+
+    modalInstance.displayMessage = (message) => {
+        const modalInstanceTwo = $uibModal.open({
+            templateUrl: 'messageContent.html',
+            controller: 'messageCtrl',
+            controllerAs: 'modalInstanceTwo',
+            resolve: { message: () => message }
+        });
+
+        // No behaviour on close / dismiss.
+        modalInstanceTwo.result.then(() => {}, () => {});
+    };
+
+    // Close create IOU modal dialogue.
+    modalInstance.cancel = () => $uibModalInstance.dismiss();
+
+    // Validate the IOU.
+    function invalidFormInput() {
+        return isNaN(modalInstance.form.value) || (modalInstance.form.counterparty === undefined);
+    }
+});
+
+// Controller for success/fail modal dialogue.
+app.controller('messageCtrl', function ($uibModalInstance, message) {
+    const modalInstanceTwo = this;
+    modalInstanceTwo.message = message.data;
+});
