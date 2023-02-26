@@ -4,3 +4,6 @@ Requires=network.target
 
 [Service]
 Type=simple
+User=corda
+WorkingDirectory=/opt/notary
+ExecStart
