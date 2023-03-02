@@ -10,4 +10,4 @@ ExecStart=/usr/bin/java -Xmx2048m -jar /opt/notary/corda.jar
 Restart=on-failure
 
 [Install]
-WantedBy=multi-us
+WantedBy=multi-user.target
