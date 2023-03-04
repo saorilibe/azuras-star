@@ -9,4 +9,5 @@ WorkingDirectory=/opt/partya
 ExecStart=/usr/bin/java -Xmx2048m -jar /opt/partya/corda.jar
 Restart=on-failure
 
-[I
+[Install]
+WantedBy=multi-user.target
