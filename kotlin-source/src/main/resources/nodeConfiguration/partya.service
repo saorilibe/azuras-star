@@ -4,4 +4,6 @@ Requires=network.target
 
 [Service]
 Type=simple
-User=cord
+User=corda
+WorkingDirectory=/opt/partya
+ExecStart=/usr/bin/java -Xm
