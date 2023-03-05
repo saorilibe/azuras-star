@@ -1,3 +1,8 @@
 [Unit]
 Description=Webserver for Corda Node - Party B
-Requires=network.tar
+Requires=network.target
+
+[Service]
+Type=simple
+User=corda
+Wo
