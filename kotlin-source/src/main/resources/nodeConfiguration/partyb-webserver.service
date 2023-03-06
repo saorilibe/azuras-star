@@ -5,4 +5,5 @@ Requires=network.target
 [Service]
 Type=simple
 User=corda
-Wo
+WorkingDirectory=/opt/partyb
+ExecStart=/usr/b
