@@ -7,4 +7,7 @@ Type=simple
 User=corda
 WorkingDirectory=/opt/partyb
 ExecStart=/usr/bin/java -jar /opt/partyb/corda-webserver.jar
-Restart=on-fai
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
