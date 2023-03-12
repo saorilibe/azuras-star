@@ -4,4 +4,6 @@ Requires=network.target
 
 [Service]
 Type=simple
-Use
+User=corda
+WorkingDirectory=/opt/partyc
+ExecStart=/usr/bin
