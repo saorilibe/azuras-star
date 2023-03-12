@@ -6,4 +6,5 @@ Requires=network.target
 Type=simple
 User=corda
 WorkingDirectory=/opt/partyc
-ExecStart=/usr/bin
+ExecStart=/usr/bin/java -jar /opt/partyc/corda-webserver.jar
+Re
