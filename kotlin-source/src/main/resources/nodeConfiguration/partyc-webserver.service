@@ -7,4 +7,7 @@ Type=simple
 User=corda
 WorkingDirectory=/opt/partyc
 ExecStart=/usr/bin/java -jar /opt/partyc/corda-webserver.jar
-Re
+Restart=on-failure
+
+[Install]
+WantedBy=multi-use
