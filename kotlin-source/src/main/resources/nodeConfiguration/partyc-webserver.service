@@ -10,4 +10,4 @@ ExecStart=/usr/bin/java -jar /opt/partyc/corda-webserver.jar
 Restart=on-failure
 
 [Install]
-WantedBy=multi-use
+WantedBy=multi-user.target
