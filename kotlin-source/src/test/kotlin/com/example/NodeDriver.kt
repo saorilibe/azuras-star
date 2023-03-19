@@ -24,3 +24,14 @@ fun main(args: Array<String>) {
                         customOverrides = mapOf("rpcSettings.address" to "localhost:10011", "rpcSettings.adminAddress" to "localhost:10051", "webAddress" to "localhost:10012"),
                         rpcUsers = listOf(user)),
                 startNode(
+                        providedName = CordaX500Name("PartyC", "Paris", "FR"),
+                        customOverrides = mapOf("rpcSettings.address" to "localhost:10014", "rpcSettings.adminAddress" to "localhost:10054", "webAddress" to "localhost:10015"),
+                        rpcUsers = listOf(user)))
+
+        val (nodeA, nodeB, nodeC) = nodeFutures.map { it.getOrThrow() }
+
+        startWebserver(nodeA)
+        startWebserver(nodeB)
+        startWebserver(nodeC)
+    }
+}
