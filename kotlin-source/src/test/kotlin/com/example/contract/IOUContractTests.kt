@@ -40,3 +40,58 @@ class IOUContractTests {
     }
 
     @Test
+    fun `transaction must have one output`() {
+        ledgerServices.ledger {
+            transaction {
+                output(IOU_CONTRACT_ID, IOUState(iouValue, miniCorp.party, megaCorp.party))
+                output(IOU_CONTRACT_ID, IOUState(iouValue, miniCorp.party, megaCorp.party))
+                command(listOf(megaCorp.publicKey, miniCorp.publicKey), IOUContract.Commands.Create())
+                `fails with`("Only one output state should be created.")
+            }
+        }
+    }
+
+    @Test
+    fun `lender must sign transaction`() {
+        ledgerServices.ledger {
+            transaction {
+                output(IOU_CONTRACT_ID, IOUState(iouValue, miniCorp.party, megaCorp.party))
+                command(miniCorp.publicKey, IOUContract.Commands.Create())
+                `fails with`("All of the participants must be signers.")
+            }
+        }
+    }
+
+    @Test
+    fun `borrower must sign transaction`() {
+        ledgerServices.ledger {
+            transaction {
+                output(IOU_CONTRACT_ID, IOUState(iouValue, miniCorp.party, megaCorp.party))
+                command(megaCorp.publicKey, IOUContract.Commands.Create())
+                `fails with`("All of the participants must be signers.")
+            }
+        }
+    }
+
+    @Test
+    fun `lender is not borrower`() {
+        ledgerServices.ledger {
+            transaction {
+                output(IOU_CONTRACT_ID, IOUState(iouValue, megaCorp.party, megaCorp.party))
+                command(listOf(megaCorp.publicKey, miniCorp.publicKey), IOUContract.Commands.Create())
+                `fails with`("The lender and the borrower cannot be the same entity.")
+            }
+        }
+    }
+
+    @Test
+    fun `cannot create negative-value IOUs`() {
+        ledgerServices.ledger {
+            transaction {
+                output(IOU_CONTRACT_ID, IOUState(-1, miniCorp.party, megaCorp.party))
+                command(listOf(megaCorp.publicKey, miniCorp.publicKey), IOUContract.Commands.Create())
+                `fails with`("The IOU's value must be non-negative.")
+            }
+        }
+    }
+}
