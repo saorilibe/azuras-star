@@ -10,4 +10,5 @@ import net.corda.testing.node.StartedMockNode
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
-import k
+import kotlin.test.assertEquals
+import kotlin.test.assertFailsW
