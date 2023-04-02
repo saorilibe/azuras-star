@@ -11,4 +11,7 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Test
 import kotlin.test.assertEquals
-import kotlin.test.assertFailsW
+import kotlin.test.assertFailsWith
+
+class IOUFlowTests {
+    lateinit var network:
