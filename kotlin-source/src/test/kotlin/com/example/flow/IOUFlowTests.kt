@@ -14,4 +14,5 @@ import kotlin.test.assertEquals
 import kotlin.test.assertFailsWith
 
 class IOUFlowTests {
-    lateinit var network:
+    lateinit var network: MockNetwork
+    lateinit var a: StartedMockN
