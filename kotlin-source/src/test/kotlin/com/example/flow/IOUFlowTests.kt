@@ -18,4 +18,6 @@ class IOUFlowTests {
     lateinit var a: StartedMockNode
     lateinit var b: StartedMockNode
 
-    @B
+    @Before
+    fun setup() {
+        network = MockNetw
