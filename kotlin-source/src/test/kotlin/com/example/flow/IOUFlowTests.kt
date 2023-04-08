@@ -20,4 +20,4 @@ class IOUFlowTests {
 
     @Before
     fun setup() {
-        network = MockNetw
+        network = MockNetwork(listOf("com.example.contract", "com.examp
