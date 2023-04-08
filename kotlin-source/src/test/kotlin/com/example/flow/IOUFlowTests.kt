@@ -20,4 +20,6 @@ class IOUFlowTests {
 
     @Before
     fun setup() {
-        network = MockNetwork(listOf("com.example.contract", "com.examp
+        network = MockNetwork(listOf("com.example.contract", "com.example.schema"))
+        a = network.createPartyNode()
+        b =
