@@ -23,4 +23,5 @@ class IOUFlowTests {
         network = MockNetwork(listOf("com.example.contract", "com.example.schema"))
         a = network.createPartyNode()
         b = network.createPartyNode()
-        // For real nodes this happens automatically, but we have to manually register th
+        // For real nodes this happens automatically, but we have to manually register the flow for tests.
+        listOf(a, b).forEach { it.re
