@@ -22,4 +22,5 @@ class IOUFlowTests {
     fun setup() {
         network = MockNetwork(listOf("com.example.contract", "com.example.schema"))
         a = network.createPartyNode()
-        b =
+        b = network.createPartyNode()
+        // For real nodes this happe
