@@ -24,4 +24,9 @@ class IOUFlowTests {
         a = network.createPartyNode()
         b = network.createPartyNode()
         // For real nodes this happens automatically, but we have to manually register the flow for tests.
-        listOf(a, b).forEach { it.registerInitiatedFlow(ExampleFlow.Acceptor::class.java) 
+        listOf(a, b).forEach { it.registerInitiatedFlow(ExampleFlow.Acceptor::class.java) }
+        network.runNetwork()
+    }
+
+    @After
+    
