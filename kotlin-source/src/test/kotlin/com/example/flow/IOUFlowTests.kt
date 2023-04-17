@@ -29,4 +29,8 @@ class IOUFlowTests {
     }
 
     @After
-    
+    fun tearDown() {
+        network.stopNodes()
+    }
+
+   
