@@ -33,4 +33,6 @@ class IOUFlowTests {
         network.stopNodes()
     }
 
-   
+    @Test
+    fun `flow rejects invalid IOUs`() {
+ 
