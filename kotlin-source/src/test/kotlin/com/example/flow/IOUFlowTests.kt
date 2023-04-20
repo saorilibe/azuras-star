@@ -39,4 +39,4 @@ class IOUFlowTests {
         val future = a.startFlow(flow)
         network.runNetwork()
 
-        // The IOUContra
+        // The IOUContract specifies that IOUs cannot have negative va
