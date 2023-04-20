@@ -39,4 +39,5 @@ class IOUFlowTests {
         val future = a.startFlow(flow)
         network.runNetwork()
 
-        // The IOUContract specifies that IOUs cannot have negative va
+        // The IOUContract specifies that IOUs cannot have negative values.
+        assertFailsWith<TransactionVerificationException> { 
