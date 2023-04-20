@@ -40,4 +40,8 @@ class IOUFlowTests {
         network.runNetwork()
 
         // The IOUContract specifies that IOUs cannot have negative values.
-        assertFailsWith<TransactionVerificationException> { 
+        assertFailsWith<TransactionVerificationException> { future.getOrThrow() }
+    }
+
+    @Test
+    fun `Signe
