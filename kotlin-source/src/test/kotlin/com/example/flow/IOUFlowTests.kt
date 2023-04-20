@@ -36,4 +36,7 @@ class IOUFlowTests {
     @Test
     fun `flow rejects invalid IOUs`() {
         val flow = ExampleFlow.Initiator(-1, b.info.singleIdentity())
-        val future = a.startFlow(flow
+        val future = a.startFlow(flow)
+        network.runNetwork()
+
+        // The IOUContra
