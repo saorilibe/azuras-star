@@ -44,4 +44,5 @@ class IOUFlowTests {
     }
 
     @Test
-    fun `SignedTransaction returned by the flow is signed by th
+    fun `SignedTransaction returned by the flow is signed by the initiator`() {
+        val flow = ExampleFlow.Initiator(1, 
