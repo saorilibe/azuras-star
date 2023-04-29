@@ -54,4 +54,5 @@ class IOUFlowTests {
     }
 
     @Test
-    fun `SignedTransac
+    fun `SignedTransaction returned by the flow is signed by the acceptor`() {
+  
