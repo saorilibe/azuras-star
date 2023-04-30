@@ -57,4 +57,6 @@ class IOUFlowTests {
     fun `SignedTransaction returned by the flow is signed by the acceptor`() {
         val flow = ExampleFlow.Initiator(1, b.info.singleIdentity())
         val future = a.startFlow(flow)
-        net
+        network.runNetwork()
+
+        val signedTx = future.ge
