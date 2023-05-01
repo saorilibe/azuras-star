@@ -59,4 +59,5 @@ class IOUFlowTests {
         val future = a.startFlow(flow)
         network.runNetwork()
 
-        val signedTx = future.ge
+        val signedTx = future.getOrThrow()
+        signedTx.verifySignaturesExcept(a.info.si
