@@ -64,4 +64,5 @@ class IOUFlowTests {
     }
 
     @Test
-    fun `flow records a transaction in both parties' tr
+    fun `flow records a transaction in both parties' transaction storages`() {
+        val flow = ExampleFlow
