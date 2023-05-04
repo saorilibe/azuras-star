@@ -64,4 +64,4 @@ class IOUFlowTests {
     }
 
     @Test
-    fu
+    fun `flow records a transaction in both parties' tr
