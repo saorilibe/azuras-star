@@ -60,4 +60,8 @@ class IOUFlowTests {
         network.runNetwork()
 
         val signedTx = future.getOrThrow()
-        signedTx.verifySignaturesExcept(a.info.si
+        signedTx.verifySignaturesExcept(a.info.singleIdentity().owningKey)
+    }
+
+    @Test
+    fu
