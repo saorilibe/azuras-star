@@ -65,4 +65,5 @@ class IOUFlowTests {
 
     @Test
     fun `flow records a transaction in both parties' transaction storages`() {
-        val flow = ExampleFlow
+        val flow = ExampleFlow.Initiator(1, b.info.singleIdentity())
+        val futur
