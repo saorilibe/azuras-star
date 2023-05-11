@@ -70,4 +70,5 @@ class IOUFlowTests {
         network.runNetwork()
         val signedTx = future.getOrThrow()
 
-        // We check the r
+        // We check the recorded transaction in both transaction storages.
+        f
