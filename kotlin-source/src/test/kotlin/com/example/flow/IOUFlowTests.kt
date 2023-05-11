@@ -71,4 +71,5 @@ class IOUFlowTests {
         val signedTx = future.getOrThrow()
 
         // We check the recorded transaction in both transaction storages.
-        f
+        for (node in listOf(a, b)) {
+            assertEquals(si
