@@ -68,4 +68,6 @@ class IOUFlowTests {
         val flow = ExampleFlow.Initiator(1, b.info.singleIdentity())
         val future = a.startFlow(flow)
         network.runNetwork()
-      
+        val signedTx = future.getOrThrow()
+
+        // We check the r
