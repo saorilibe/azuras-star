@@ -81,4 +81,5 @@ class IOUFlowTests {
         val iouValue = 1
         val flow = ExampleFlow.Initiator(iouValue, b.info.singleIdentity())
         val future = a.startFlow(flow)
-  
+        network.runNetwork()
+        val signedTx = fut
