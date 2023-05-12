@@ -72,4 +72,4 @@ class IOUFlowTests {
 
         // We check the recorded transaction in both transaction storages.
         for (node in listOf(a, b)) {
-            assertEquals(si
+            assertEquals(signedTx, node.services.validatedTransactions.getTransac
