@@ -77,4 +77,4 @@ class IOUFlowTests {
     }
 
     @Test
-    fun `recorded tr
+    fun `recorded transaction has no inputs and a single output, the input
