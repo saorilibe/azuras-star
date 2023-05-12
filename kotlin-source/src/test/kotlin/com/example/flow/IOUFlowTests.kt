@@ -84,4 +84,5 @@ class IOUFlowTests {
         network.runNetwork()
         val signedTx = future.getOrThrow()
 
-        // We check the recorde
+        // We check the recorded transaction in both vaults.
+        for (node in list
