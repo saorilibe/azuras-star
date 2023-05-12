@@ -77,4 +77,6 @@ class IOUFlowTests {
     }
 
     @Test
-    fun `recorded transaction has no inputs and a single output, the input
+    fun `recorded transaction has no inputs and a single output, the input IOU`() {
+        val iouValue = 1
+        val flow =
