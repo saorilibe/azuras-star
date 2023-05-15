@@ -85,4 +85,5 @@ class IOUFlowTests {
         val signedTx = future.getOrThrow()
 
         // We check the recorded transaction in both vaults.
-        for (node in list
+        for (node in listOf(a, b)) {
+            val recordedTx = node.services.
