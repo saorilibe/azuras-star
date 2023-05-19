@@ -87,4 +87,5 @@ class IOUFlowTests {
         // We check the recorded transaction in both vaults.
         for (node in listOf(a, b)) {
             val recordedTx = node.services.validatedTransactions.getTransaction(signedTx.id)
-            val 
+            val txOutputs = recordedTx!!.tx.outputs
+            as
