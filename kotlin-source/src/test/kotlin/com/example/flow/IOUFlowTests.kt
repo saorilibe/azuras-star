@@ -88,4 +88,6 @@ class IOUFlowTests {
         for (node in listOf(a, b)) {
             val recordedTx = node.services.validatedTransactions.getTransaction(signedTx.id)
             val txOutputs = recordedTx!!.tx.outputs
-            as
+            assert(txOutputs.size == 1)
+
+            val recordedState = txOutputs[0]
