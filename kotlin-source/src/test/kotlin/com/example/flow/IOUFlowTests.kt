@@ -90,4 +90,5 @@ class IOUFlowTests {
             val txOutputs = recordedTx!!.tx.outputs
             assert(txOutputs.size == 1)
 
-            val recordedState = txOutputs[0]
+            val recordedState = txOutputs[0].data as IOUState
+            assertEquals(recordedState.va
