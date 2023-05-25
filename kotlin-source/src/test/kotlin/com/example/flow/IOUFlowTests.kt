@@ -99,3 +99,5 @@ class IOUFlowTests {
 
     @Test
     fun `flow records the correct IOU in both parties' vaults`() {
+        val iouValue = 1
+        val flow = Example
