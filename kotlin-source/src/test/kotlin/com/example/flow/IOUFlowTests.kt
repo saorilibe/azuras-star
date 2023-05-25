@@ -98,4 +98,4 @@ class IOUFlowTests {
     }
 
     @Test
-    fu
+    fun `flow records the correct IOU in both parties' vaults`() {
