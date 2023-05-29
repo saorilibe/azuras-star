@@ -101,4 +101,5 @@ class IOUFlowTests {
     fun `flow records the correct IOU in both parties' vaults`() {
         val iouValue = 1
         val flow = ExampleFlow.Initiator(1, b.info.singleIdentity())
-   
+        val future = a.startFlow(flow)
+        network.r
