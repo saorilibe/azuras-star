@@ -105,4 +105,5 @@ class IOUFlowTests {
         network.runNetwork()
         future.getOrThrow()
 
-        // We
+        // We check the recorded IOU in both vaults.
+        for (node in listOf(
