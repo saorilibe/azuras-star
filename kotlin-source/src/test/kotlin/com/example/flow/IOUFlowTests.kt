@@ -108,4 +108,5 @@ class IOUFlowTests {
         // We check the recorded IOU in both vaults.
         for (node in listOf(a, b)) {
             node.transaction {
-                val ious = node.se
+                val ious = node.services.vaultService.queryBy<IOUState>().states
+        
