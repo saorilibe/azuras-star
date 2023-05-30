@@ -106,4 +106,6 @@ class IOUFlowTests {
         future.getOrThrow()
 
         // We check the recorded IOU in both vaults.
-        for (node in listOf(
+        for (node in listOf(a, b)) {
+            node.transaction {
+                val ious = node.se
