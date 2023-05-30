@@ -109,4 +109,5 @@ class IOUFlowTests {
         for (node in listOf(a, b)) {
             node.transaction {
                 val ious = node.services.vaultService.queryBy<IOUState>().states
-        
+                assertEquals(1, ious.size)
+                val recordedSta
