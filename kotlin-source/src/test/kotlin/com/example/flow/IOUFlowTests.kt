@@ -111,4 +111,5 @@ class IOUFlowTests {
                 val ious = node.services.vaultService.queryBy<IOUState>().states
                 assertEquals(1, ious.size)
                 val recordedState = ious.single().state.data
-                assertEquals
+                assertEquals(recordedState.value, iouValue)
+               
