@@ -112,4 +112,4 @@ class IOUFlowTests {
                 assertEquals(1, ious.size)
                 val recordedState = ious.single().state.data
                 assertEquals(recordedState.value, iouValue)
-               
+                assertEquals(recordedState.lender, a.info.singleIde
