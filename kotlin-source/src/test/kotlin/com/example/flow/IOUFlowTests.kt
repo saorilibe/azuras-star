@@ -113,4 +113,7 @@ class IOUFlowTests {
                 val recordedState = ious.single().state.data
                 assertEquals(recordedState.value, iouValue)
                 assertEquals(recordedState.lender, a.info.singleIdentity())
-                assertEquals(recordedState.borrowe
+                assertEquals(recordedState.borrower, b.info.singleIdentity())
+            }
+        }
+    }
